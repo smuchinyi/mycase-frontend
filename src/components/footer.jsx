@@ -7,13 +7,8 @@ import './footer.css';
 
 
 const main = {
-    height: "350px",
-    backgroundColor: "rgba(66, 64, 64, 0.9)",
-    padding: 50
-}
-
-const row1 = {
-
+    backgroundColor: "rgb(35,31,32)",
+    padding: 0
 }
 
 const content = (
@@ -27,29 +22,10 @@ const content = (
     </div>
 );
 
-const row2 = {
 
-}
-
-const contact = {
-
-
-}
-
-const info = {
-    fontWeight: "bolder",
-    fontSize: 17,
-    margin: 10
-}
-
-const footerText = {
-    marginTop: 100,
-    color: "black",
-    textAlign: "center"
-}
 
 const logo = {
-    marginTop: 50
+    marginTop: 0
 }
 
 
@@ -59,22 +35,49 @@ export const FooterSection = () => {
     return (
         <>
             <div style={main}>
-                <Row style={row1}>
-                    <Col xs={{ span: 24, offset: 0 }} sm={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 0 }} style={contact}>
-                        <Typography style={info}>RSC Contact Information:</Typography>
-                        <Typography style={info}>Email: case@CWSAfrica.org</Typography>
-                        <Typography style={info}>Address: P.O. Box 14176-00800, Nairobi, Kenya</Typography>
-                    </Col>
-                    <Col xs={{ span: 24, offset: 0 }} sm={{ span: 24, offset: 0 }} lg={{ span: 12, offset: 0 }}>
-                        <Popover content={content} title="CWS Website" placement="right" style={{ backgroundColor: "black" }}>
+                <div className='fraudSection'>
+                    <p id='title'>Fruad Reporting</p>
+                    <p>USRAP remains free of charge and applicants should not engage with anyone who is asking you to pay or
+provide services for information or a change in status on your case.<br/>
+Please report any instances of fraud or abuse to the RSC’s confidential email box at</p>
+<p>fraud@CWSAfrica.org</p>
+                    </div>
+                    <div className='operation'><span>RSC Africa is operated by CWS as part of a cooperative agreement with the United States Department of State. This website was
+funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended.
+The opinions, findings, and conclusions stated herein are those of the author and do not necessarily reflect those of the United
+States Department of State.</span></div>
+                
+                <div className='footer-last'>
+                        <div>
+                            <span className='contact-title'>
+                                RSC CONTACT INFORMATION:
+                            </span>
+                            <p className='contact-info'>
+                                P.O. Box 14176-00800,<br/>
+Nairobi, Kenya<br/>
+Email: case@CWSAfrica.org
+                                </p>
+
+                        </div>
+                        <div>
+                             <span className='site-title'>
+                                SITEMAP
+                            </span>
+                            <p className="siteMap">
+                                Check my Case<br/>
+Gallery<br/>
+Refugee Resources<br/>
+Public Resources<br/>
+Contact Us<br/>
+                                </p>
+                        </div>
+                        <div>
+                            <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src={cws} style={logo} />
-                        </Popover>
-                    </Col>
-                </Row>
-                <Row style={row2} justify="center">
-                    <Typography style={footerText}>RSC Africa is operated by CWS as part of a cooperative agreement with the United States Department of State. This website was funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended. The opinions, findings, and conclusions stated herein are those of the author
-and do not necessarily reflect those of the United States Department of State</Typography>
-                </Row>
+                        </Popover></div>
+                        </div>
+                
+                
             </div>
         </>
     )
