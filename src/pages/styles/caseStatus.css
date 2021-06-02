@@ -1,0 +1,41 @@
+.status_section{
+    background-color: #E7E4E4;
+    padding: 40px;
+   
+}
+ .title,.case_title{
+     font-weight: bold;
+     font-size: large;
+     text-align: center;
+    }
+
+.form_section{
+    background-color:#959595;
+    padding: 40px;
+}    
+form{
+     padding: 60px;
+     font-weight: bold;
+     font-size: x-large;
+     text-align: center;
+}
+input[type=text],input[type=text]:focus,input[type=file],input[type=file]:focus{
+      -webkit-appearance: none;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
+      width:150% ;
+      border-radius: 0px;
+      margin: 0px;
+      outline: none;
+      padding: 0px;
+
+    }
+
+    .case{
+       font-weight:medium;
+       font-size: medium;
+    }
+ Row{
+     margin-bottom:20px ;
+ }
