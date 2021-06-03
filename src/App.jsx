@@ -8,16 +8,15 @@ import { LandingSection } from './components/landing.jsx'
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <HeaderSection />
-        <LandingSection />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/case' component={Case} />
-        </Switch>
-        <FooterSection />
-      </div>
+<BrowserRouter>
+     <div className="App">
+       <HeaderSection />
+     <Switch>
+      <Route exact path='/' component={Home} />
+      <Route exact path='/status' component={Case} />
+    </Switch>
+    <FooterSection />
+    </div>
     </BrowserRouter>
   );
 }

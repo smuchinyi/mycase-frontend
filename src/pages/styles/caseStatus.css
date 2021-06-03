@@ -1,41 +1,111 @@
-.status_section{
-    background-color: #E7E4E4;
-    padding: 40px;
-   
+.case-status{
+    background-image: url('/src/images/casebg.png');
+    padding: 30px;
+    text-align: center;
 }
- .title,.case_title{
-     font-weight: bold;
-     font-size: large;
-     text-align: center;
-    }
+.status{
+    color:rgb(255,255,255);
+    text-align: center;
+    /* font-family:sans-serif; */
+    font-weight: bolder;
+    font-size:xx-large;
 
-.form_section{
-    background-color:#959595;
-    padding: 40px;
-}    
-form{
-     padding: 60px;
-     font-weight: bold;
-     font-size: x-large;
-     text-align: center;
 }
+#header{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.status-display{
+    padding: 40px;
+    display: block;
+    border-radius: 1px;
+}
+.status-head{
+    background-color:rgb(16,77,132) ;
+    text-align: center;
+    padding: 40px;
+    color:rgb(255,255,255);
+    font-family:sans-serif;
+    font-size: 18px;
+    padding: 20px;
+
+}
+.status-body{
+    padding: 20px;
+    background-color: rgb(255,255,255);
+}
+.case-info{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    /* justify-content: space-between; */
+    /* 0%;width: 6 */
+}
+
+.label{
+    margin-right: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    width: 200px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
+.help-case{
+    
+    padding: 50px;
+}
+#help-title{
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.help-steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: small;
+    
+}
+#info-title{
+    font-weight: bolder;
+}
+
+.contacts{
+    background-color: rgb(227,140,36);
+    padding: 28px;
+    display: block;
+    text-align: center;
+}
+#contacts-title{
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.account-details{
+    padding: 10px 0px 20px 100px;
+}
+
+.details-title{
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 20px; 
+       
+}
+
 input[type=text],input[type=text]:focus,input[type=file],input[type=file]:focus{
-      -webkit-appearance: none;
-      border: none;
-      box-shadow: none;
-      background-color: transparent;
-      width:150% ;
-      border-radius: 0px;
-      margin: 0px;
-      outline: none;
-      padding: 0px;
-
-    }
-
-    .case{
-       font-weight:medium;
-       font-size: medium;
-    }
- Row{
-     margin-bottom:20px ;
+    border: none;
+    background-color: transparent;
+    width: 300px;
+    outline: none;
  }
