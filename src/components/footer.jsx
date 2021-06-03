@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import "antd/dist/antd.css";
 import { Row, Col, Popover } from 'antd';
 import Typography from '@material-ui/core/Typography';
-import cws from '../images/cws-logo.png'
+import cws from '../images/ws.png'
 import './footer.css';
 
 
@@ -25,7 +25,7 @@ const content = (
 
 
 const logo = {
-    marginTop: 0
+    height:40,
 }
 
 
