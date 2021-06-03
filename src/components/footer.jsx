@@ -38,46 +38,46 @@ export const FooterSection = () => {
                 <div className='fraudSection'>
                     <p id='title'>Fruad Reporting</p>
                     <p>USRAP remains free of charge and applicants should not engage with anyone who is asking you to pay or
-provide services for information or a change in status on your case.<br/>
+provide services for information or a change in status on your case.<br />
 Please report any instances of fraud or abuse to the RSC’s confidential email box at</p>
-<p>fraud@CWSAfrica.org</p>
-                    </div>
-                    <div className='operation'><span>RSC Africa is operated by CWS as part of a cooperative agreement with the United States Department of State. This website was
-funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended.
-The opinions, findings, and conclusions stated herein are those of the author and do not necessarily reflect those of the United
+                    <p>fraud@CWSAfrica.org</p>
+                </div>
+                <div className='operation'><span>RSC Africa is operated by CWS as part of a cooperative agreement with the United States Department of State. This website was
+                funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended.
+                The opinions, findings, and conclusions stated herein are those of the author and do not necessarily reflect those of the United
 States Department of State.</span></div>
-                
+
                 <div className='footer-last'>
-                        <div>
-                            <span className='contact-title'>
-                                RSC CONTACT INFORMATION:
+                    <div>
+                        <span className='contact-title'>
+                            RSC CONTACT INFORMATION:
                             </span>
-                            <p className='contact-info'>
-                                P.O. Box 14176-00800,<br/>
-Nairobi, Kenya<br/>
+                        <p className='contact-info'>
+                            P.O. Box 14176-00800,<br />
+Nairobi, Kenya<br />
 Email: case@CWSAfrica.org
                                 </p>
 
-                        </div>
-                        <div>
-                             <span className='site-title'>
-                                SITEMAP
+                    </div>
+                    <div>
+                        <span className='site-title'>
+                            SITEMAP
                             </span>
-                            <p className="siteMap">
-                                Check my Case<br/>
-Gallery<br/>
-Refugee Resources<br/>
-Public Resources<br/>
-Contact Us<br/>
-                                </p>
-                        </div>
-                        <div>
-                            <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                        <p className="siteMap">
+                            Check my Case<br />
+Gallery<br />
+Refugee Resources<br />
+Public Resources<br />
+Contact Us<br />
+                        </p>
+                    </div>
+                    <div>
+                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src={cws} style={logo} />
                         </Popover></div>
-                        </div>
-                
-                
+                </div>
+
+
             </div>
         </>
     )
