@@ -1,110 +1,184 @@
-import React,{useState} from 'react'
-import { HeaderSection } from '../components/header.jsx';
-import { FooterSection } from '../components/footer.jsx';
+import React,{useState} from 'react';
 import './styles/caseStatus.css';
-import { Row, Col } from 'antd';
 import Swal from 'sweetalert2';
+import { Footer } from 'antd/lib/layout/layout';
 
+const imageStyle = {
+        width: 239,
+        height: 126
+}
 
 export const Case = () => {
-   const [caseDetails,updateDetails] = useState({date_of_birth:"",address:"",passport:""});
-   const formHandler = (e)=>{
-       e.preventDefault();
-       updateDetails({...caseDetails,[e.target.name]:e.target.value});
-     
-   }
-   console.log('fff',caseDetails);
 
-   const caseUpdate = ()=>{
-       if(caseDetails.date_of_birth==="" || caseDetails.address==="" ||caseDetails.passport===""){
-       return Swal.fire({
+    const formValidator = (e) => 
+    {
+    e.preventDefault();    
+  var x = document.forms["caseForm"]["date"].value;
+  var y = document.forms["caseForm"]["address"].value;
+  var z = document.forms["caseForm"]["passport"].value;
+  console.log('www',x);
+  if (x == "") {
+     return Swal.fire({
                         title: 'Error!',
-                        text: 'date of birth,address and passport required!',
+                        text: 'date of birth is required!',
                         icon: 'error',
                         confirmButtonText: 'close'
                     })
-       }
-       else{
-           return Swal.fire({
-                        title: 'Success!',
-                        text: 'Updated',
-                        icon: 'success',
+  }
+  if (y == "") {
+     return Swal.fire({
+                        title: 'Error!',
+                        text: 'address is required!',
+                        icon: 'error',
                         confirmButtonText: 'close'
-                    });
-       }
-   }
-    return (
-        <>
-        
-            <HeaderSection />
-            <div className='status_section'>
-                <p className="title">MY CASE STATUS</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex
-ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit</p>
-<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
-aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex</p>
-                </div>
-            <div className='form_section'>
-                <p className='case_title'>HOW CAN I HELP MY CASE</p>
-                <p>
-                    <form>
-                       
-                        <Row>
-                            <Col>NAME:</Col>
-                             <Col>JANE DOE</Col>
-                             
-                            </Row>
-                            <Row>
-                            <Col>GENDER:</Col>
-                             <Col>FEMALE</Col>
-                             
-                            </Row>
-                            <Row>
-                            <Col>DATE OF BIRTH:</Col>
-                             <Col> <input name="date_of_birth" type="text" className='case'  placeholder="Please enter your date of birth" onChange={formHandler} /></Col>
-                             
-                            </Row>
-                            <Row>
-                            <Col>ID NO:</Col>
-                             <Col>35466626</Col>
-                             
-                            </Row>
-                            <Row>
-                            <Col>COUNTRY OF ORIGIN:</Col>
-                             <Col>KENYA</Col>
-                             
-                            </Row>
-                            <Row>
-                            <Col>TELEPHONE NUMBER:</Col>
-                             <Col>+25479888</Col>
-                             
-                            </Row>
-                            <Row>
-                            <Col>ADDRESS:</Col>
-                             <Col><input name="address" type="text" className='case' placeholder="Please enter your address" onChange={formHandler} /></Col>
-                             
-                            </Row>
-                            <Row>
-                            <Col>PASSPORT PICTURE:</Col>
-                             <Col><input name="passport" type="file" placeholder="Please upload your passport picture:" onChange={formHandler} /></Col>
-                             
-                            </Row>
+                    })
+  }
+  if (z == "") {
+     return Swal.fire({
+                        title: 'Error!',
+                        text: 'date passport is required!',
+                        icon: 'error',
+                        confirmButtonText: 'close'
+                    })
+  }
+}
+   return(
+       <>
+       <div className='case-status'>
+           <span className='status'>Case Status</span>
+           <div className="status-display">
+               <div className="status-head">
+                   <p id='header'>STATUS: HOLD</p>
+                   <p>Your case is currently on hold. A representative from RSC Africa will<br/>
 
-                             <Row>
-                            
-                             <Col><input  type="submit" value='SUBMIT CHANGES' onClick={(e)=>{
-                                 e.preventDefault();
-                                 caseUpdate();
-                             }}/></Col>
-                             
-                            </Row>
+contact you if any additional information is required.</p>
+                   </div>
+                   <div className="status-body">
+                      <div className='case-info'> <span className='label'>RSC Interview:</span><span>You have completed this step of the process</span></div>
+                      <div className='case-info'> <span className='label'>USCIS Interview:</span><span>You have completed this step of the process</span></div>
+                      <div className='case-info'> <span className='label'>Security Status:
+</span><span>In Process</span></div>
+                      <div className='case-info'> <span className='label'>Medical Status:</span><span>___</span></div>
+                      <div className='case-info'> <span className='label'>Cultural Orientation:</span><span>___</span></div>
+                       <div className='case-info'> <span className='label'>Travel Status:</span><span>___</span></div>
+                   </div>
+           </div>
 
-                        </form>
-                </p>
-            </div>
-            <FooterSection />
+       </div>
+
+       <div className='helpCase'>
+           <div id='help-title'><span >How Can I Help MyCase</span></div>
+           <div className='help-steps'>
+               <div>
+                   <img src='images/first.png' style={imageStyle} /><br/>
+                   <span id='info-title'>Always Tell the Truth</span>
+ <p>
+Knowingly providing false information can affect
+your eligibility for resettlement to the United States.</p>
+                   </div>
+                    <div>
+                   <img src='images/appoint.png' style={imageStyle} /><br/>
+                   <span id='info-title'>Come to All Your Appointments</span>
+ <p>
+     Please come to all your RSC Africa scheduled
+interviews, IOM medical appointments, and cultural
+orientation sessions.
+</p>
+                   </div>
+                    <div>
+                   <img src='images/docs.png' style={imageStyle} /><br/>
+                   <span id='info-title'>Bring All Important Documents to Interviews</span>
+ <p>
+     Make sure to have all important documents ready at each
+interview, including marriage certificates, birth certificates,
+and any registration documents.
+</p>
+                   </div>
+               </div>
+
+                  <div className='help-steps'>
+               <div>
+                   <img src='images/info1.png' style={imageStyle} /><br/>
+                   <span id='info-title'>Inform Us of Any Changes to Your Family</span>
+ <p>Tell RSC Africa about any marriages, deaths or births that
+have happened for members on your case.</p>
+                   </div>
+                    <div>
+                   <img src='images/contact.png' style={imageStyle} /><br/>
+                   <span id='info-title'>Provide All of Your Contact Information</span>
+ <p>
+     Tell RSC Africa all your contact information at your first
+interview and notify us if you change your information.
+Please try to keep the same contact information throughout
+the resettlement process.
+</p>
+                   </div>
+                    <div>
+                   <img src='images/info2.png' style={imageStyle} /><br/>
+                   <span id='info-title'>Inform Us if You Move</span>
+ <p>
+     Tell RSC Africa about any changes to your current
+location. If you or a family member moves to a
+different camp or city, RSC Africa will need to know
+for scheduling future appointments.
+</p>
+                   </div>
+               </div>
+       </div>
+
+       <div className="contacts">
+           <p id = 'contacts-title'>How to Contact RSC Africa</p>
+           <p id='contacts-p'>
+               
+1.Write an email to <b>case@CWSAfrica.org</b><br/>
+2.Write a letter and give it to RSC Africa staff<br/>
+3.Check your case status at: <b>mycase.rscafrica.org</b><br/>
+               </p>
+           </div>
+
+           <div className="account-details">
+               <form name="caseForm">
+               <div className='details-title'>
+                   <span>Account Details</span>
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">NAME : </span> &nbsp; <span>JANE DOE</span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">GENDER:  </span>&nbsp; <span>FEMALE</span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">DATE OF BIRTH: </span>&nbsp; <span><input type="text" name="date" placeholder="Please enter your date of birth"/> </span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">ID NO:  </span>&nbsp; <span>564273</span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">COUNTRY OF ORIGIN:</span> &nbsp;<span> KENYA </span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">TELEPHONE NUMBER:</span> &nbsp;<span> +254785643</span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">ADDRESS:  </span>&nbsp; <span><input type="text" name="address" placeholder="Please enter your address"/></span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label">PASSPORT PICTURE:  </span>&nbsp; <span><input type="file" name="passport" placeholder="Please upload your passport picture"/></span>
+                   
+               </div>
+               <div className='user-info'>
+                   <span className="detail-label"> </span>&nbsp; <span><input type="submit" value="submit changes" onClick={formValidator}/></span>
+                   
+               </div>
+               </form>
+           </div>
         </>
     )
 }
