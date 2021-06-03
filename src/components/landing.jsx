@@ -93,7 +93,7 @@ remain patient.</p>
 addressing non-urgent matters.</p>
                 </Col>
                 <Col span={8} style={{ backgroundColor: "#353582" }}>
-                    <img src={footer} width="100%" height="700px" style={{ objectFit: "cover", display: "block" }} />
+                    <img src={footer} width="100%" height="700px" style={{ objectFit: "cover" }} />
                 </Col>
             </Row>
         </>

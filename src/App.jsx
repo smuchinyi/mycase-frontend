@@ -4,10 +4,10 @@ import { Case } from './pages/caseStatus.jsx';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import { Footer, FooterSection } from './components/footer.jsx'
 import { HeaderSection } from './components/header.jsx'
-import { LandingSection } from './components/landing.jsx'
 
 function App() {
   return (
+
 <BrowserRouter>
      <div className="App">
        <HeaderSection />

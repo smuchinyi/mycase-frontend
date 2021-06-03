@@ -1,4 +1,5 @@
 import React from 'react'
+import { LandingSection } from '../components/landing'
 
 
 
@@ -7,8 +8,7 @@ import React from 'react'
 export const Home = () => {
     return (
         <>
-            
-
+            <LandingSection />
         </>
     )
 }
