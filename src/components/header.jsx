@@ -3,16 +3,16 @@ import "antd/dist/antd.css";
 import Container from '@material-ui/core/Container';
 import { Row, Col, Dropdown, Menu, Button } from 'antd';
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
-import flagUs from '../images/us-flag.png'
-import cws from '../images/cws-logo.png'
-import rsc from '../images/rsc-africa.png'
+import flagUs from '../images/us-fl.jpeg'
+import cws from '../images/cws-fl.jpeg'
+import rsc from '../images/rsc-fl.jpeg'
 import Typography from '@material-ui/core/Typography';
 import "./header.css";
 import { Link } from 'react-router-dom';
 
 
 const header = {
-    height: "300px",
+    height: "320px",
     padding: "50px",
 
 }
@@ -83,13 +83,13 @@ export const HeaderSection = () => {
             <div style={header}>
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                     <Col span={8} style={leftCol}>
-                        <img src={flagUs} height={50} />
+                        <img src={flagUs} height={70} />
                     </Col>
                     <Col span={8} style={middleCol}>
-                        <img src={rsc} height={80} />
+                        <img src={rsc} height={120} />
                     </Col>
                     <Col span={8} style={rightCol}>
-                        <img src={cws} height={50} />
+                        <img src={cws} height={70} />
                     </Col>
                 </Row>
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{ padding: "80px", textAlign: "center" }}>
@@ -115,7 +115,7 @@ export const HeaderSection = () => {
                     <Col span={4}>
                         <h2>
                             <Dropdown overlay={lang}>
-                                <Button style={{ backgroundColor: "#ea9b0a", fontWeight: "bold", color: "black", fontSize: "17px", height: "50px" }}>
+                                <Button style={{ borderColor: "#ea9b0a", backgroundColor: "#ea9b0a", fontWeight: "bold", color: "black", fontSize: "17px", height: "50px" }}>
                                     Choose Language <DownOutlined />
                                 </Button>
                             </Dropdown>
