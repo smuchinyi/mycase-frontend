@@ -25,7 +25,8 @@ const content = (
 
 
 const logo = {
-    height:40,
+    height:50,
+    with:40
 }
 
 
