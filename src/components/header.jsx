@@ -86,7 +86,7 @@ export const HeaderSection = () => {
                         <img src={flagUs} height={70} />
                     </Col>
                     <Col span={8} style={middleCol}>
-                        <img src={rsc} height={120} />
+                        <Link to='/'><img src={rsc} height={120} /></Link>
                     </Col>
                     <Col span={8} style={rightCol}>
                         <img src={cws} height={70} />
@@ -107,7 +107,7 @@ export const HeaderSection = () => {
                         <h2 className="nav-link">Public Resources</h2>
                     </Col>
                     <Col span={4}>
-                        <h2 className="nav-link">Gallery</h2>
+                        <h2 className="nav-link"><Link to='/gallery'>Gallery</Link></h2>
                     </Col>
                     <Col span={4}>
                         <h2 className="nav-link">Contact Us</h2>

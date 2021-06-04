@@ -1,9 +1,11 @@
 import './App.css';
 import { Home } from './pages/home.jsx';
 import { Case } from './pages/caseStatus.jsx';
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import { Footer, FooterSection } from './components/footer.jsx'
-import { HeaderSection } from './components/header.jsx'
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Footer, FooterSection } from './components/footer.jsx';
+import { HeaderSection } from './components/header.jsx';
+import {Gallery} from './pages/gallery.jsx';
+
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
      <Switch>
       <Route exact path='/' component={Home} />
       <Route exact path='/status' component={Case} />
+      <Route exact path='/gallery' component={Gallery} />
     </Switch>
     <FooterSection />
     </div>
