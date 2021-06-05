@@ -1,32 +1,40 @@
 .case-status{
-    background-image: url('/src/images/casebg.png');
-    padding: 50px;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size:cover;
+    height: 850px;
+    position: relative;
     
 }
-.status{
-    color:rgb(255,255,255);
-    text-align: center;
-    /* font-family:sans-serif; */
-    font-weight: bolder;
-    font-size:xx-large;
 
+.bg-image{
+    object-fit: cover;
+    filter: brightness(60%);
+}
+.status{
+    position: absolute; 
+    top: 60px;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 38px;
+    color: white;
 }
 #header{
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bolder;
 }
 .status-display{
     padding: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 400px;
+    width: 80%;
     display: block;
     border-radius: 1px;
 }
 .status-head{
     background-color:rgb(16,77,132) ;
     text-align: center;
-    padding: 40px;
     color:rgb(255,255,255);
     font-family:sans-serif;
     font-size: 18px;
@@ -34,7 +42,9 @@
 
 }
 .status-body{
-    padding: 20px;
+    padding-left: 100px;
+    padding-top: 10px;
+    padding-bottom: 50px;
     background-color: rgb(255,255,255);
 }
 .case-info{
@@ -45,22 +55,36 @@
     /* 0%;width: 6 */
 }
 
+.right-value{
+    font-size: 16px;
+    color: black;
+}
+
 .label{
     margin-right: 50px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: bolder;
     display: block;
     width: 200px;
     margin-left: 0px;
     text-align: justify;
 }
 
+.col-items{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 .help-case{
-    
-    padding: 50px;
+    padding: 80px;
 }
 #help-title{
     font-weight: bolder;
+    margin-top: 30px;
     font-size: 48px;
     text-align: center;
 }

@@ -1,0 +1,28 @@
+.title-gallery{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.main-container{
+    padding: 50px;
+
+}
+
+.album-name{
+    font-weight: bold;
+}
+
+.gallery-view{
+    background-color: #e6e6e6;
+}
+
+.gallery-image{
+    object-fit: cover;
+    height: 150px;
+    width: 95%;
+}
+
+.col-image{
+    margin-bottom: 20px;
+}
