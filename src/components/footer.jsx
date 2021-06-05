@@ -3,6 +3,7 @@ import "antd/dist/antd.css";
 import { Row, Col, Popover } from 'antd';
 import Typography from '@material-ui/core/Typography';
 import cws from '../images/ws.png'
+import footer from '../images/footer4.png'
 import './footer.css';
 
 
@@ -25,8 +26,8 @@ const content = (
 
 
 const logo = {
-    height:50,
-    with:40
+    height: 50,
+    with: 40
 }
 
 
@@ -37,11 +38,14 @@ export const FooterSection = () => {
         <>
             <div style={main}>
                 <div className='fraudSection'>
+                    <img src={footer} width="100%" height="250px" className="fraud-image" />
                     <p id='title'>Fruad Reporting</p>
-                    <p>USRAP remains free of charge and applicants should not engage with anyone who is asking you to pay or
+                    <p className="fraud-text">USRAP remains free of charge and applicants should not engage with anyone who is asking you to pay or
 provide services for information or a change in status on your case.<br />
-Please report any instances of fraud or abuse to the RSC’s confidential email box at</p>
-                    <p>fraud@CWSAfrica.org</p>
+Please report any instances of fraud or abuse to the RSC’s confidential email box at<br /><br />
+                        <span style={{ fontWeight: "bold", fontStyle: "italic" }}>fraud@CWSAfrica.org</span>
+                    </p>
+
                 </div>
                 <div className='operation'><span>RSC Africa is operated by CWS as part of a cooperative agreement with the United States Department of State. This website was
                 funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended.
