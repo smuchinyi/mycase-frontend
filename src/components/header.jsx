@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React, { Fragment,useEffect} from 'react'
 import "antd/dist/antd.css";
 import Container from '@material-ui/core/Container';
 import { Row, Col, Dropdown, Menu, Button } from 'antd';
@@ -9,6 +9,9 @@ import rsc from '../images/rsc-fl.jpeg'
 import Typography from '@material-ui/core/Typography';
 import "./header.css";
 import { Link } from 'react-router-dom';
+import Tabletop from 'tabletop';
+import { useDispatch} from 'react-redux';
+import {uploadGallery} from '../store/actions/galleryActions.js';
 
 
 const header = {
@@ -78,6 +81,26 @@ const lang = (
 
 
 export const HeaderSection = () => {
+
+    const dispatch = useDispatch();
+
+      useEffect(()=>{
+      //getting sms data from drive sheet 
+        Tabletop.init({
+      key: '19_ZsP7fNAgjaObkRTGISutIMvfejV0QuI-cpUSHEHCE',
+      callback: googleData => {
+        console.log('google sheet data --->', googleData)
+        //updating store
+       if(googleData.length>2){
+            dispatch(uploadGallery(googleData));
+       }
+        console.log('www',googleData);
+      },
+      simpleSheet: true
+    })
+
+    },[]);
+
     return (
         <>
             <div style={header}>
@@ -107,7 +130,7 @@ export const HeaderSection = () => {
                         <h2 className="nav-link">Public Resources</h2>
                     </Col>
                     <Col span={4}>
-                        <h2 className="nav-link"><Link to='/gallery'>Gallery</Link></h2>
+                        <h2 className="nav-link"><Link to='/gallery' className="nav-link">Gallery</Link></h2>
                     </Col>
                     <Col span={4}>
                         <h2 className="nav-link">Contact Us</h2>

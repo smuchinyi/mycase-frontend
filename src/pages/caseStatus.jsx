@@ -14,7 +14,7 @@ export const Case = () => {
         var y = document.forms["caseForm"]["address"].value;
         var z = document.forms["caseForm"]["passport"].value;
         console.log('www', x);
-        if (x == "") {
+        if (x ==="") {
             return Swal.fire({
                 title: 'Error!',
                 text: 'date of birth is required!',
@@ -22,7 +22,7 @@ export const Case = () => {
                 confirmButtonText: 'close'
             })
         }
-        if (y == "") {
+        if (y === "") {
             return Swal.fire({
                 title: 'Error!',
                 text: 'address is required!',
@@ -30,7 +30,7 @@ export const Case = () => {
                 confirmButtonText: 'close'
             })
         }
-        if (z == "") {
+        if (z ===                                                                                                                                                                                                                                                                                                                                                                                                    "") {
             return Swal.fire({
                 title: 'Error!',
                 text: 'date passport is required!',
