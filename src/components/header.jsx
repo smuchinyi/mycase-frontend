@@ -1,4 +1,4 @@
-import React, { Fragment,useEffect} from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import "antd/dist/antd.css";
 import Container from '@material-ui/core/Container';
 import { Row, Col, Dropdown, Menu, Button } from 'antd';
@@ -10,8 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import "./header.css";
 import { Link } from 'react-router-dom';
 import Tabletop from 'tabletop';
-import { useDispatch} from 'react-redux';
-import {uploadGallery} from '../store/actions/galleryActions.js';
+import { useDispatch } from 'react-redux';
+import { uploadGallery } from '../store/actions/galleryActions.js';
 
 
 const header = {
@@ -32,74 +32,79 @@ const rightCol = {
     textAlign: "end"
 }
 
-const handleLanguageClick = () => {
 
-}
-
-const myCaseMenu = (
-    <Menu>
-        <Menu.Item key="1" >
-            How Can I help my Case
-      </Menu.Item>
-        <Menu.Item key="2" >
-            Updates to My Case
-      </Menu.Item>
-    </Menu>
-);
-
-const lang = (
-    <Menu onClick={handleLanguageClick}>
-        <Menu.Item key="1" >
-            English
-      </Menu.Item>
-        <Menu.Item key="2">
-            Kiswahili
-      </Menu.Item>
-        <Menu.Item key="3">
-            Somali
-      </Menu.Item>
-        <Menu.Item key="4">
-            Francaise
-      </Menu.Item>
-        <Menu.Item key="5">
-            Arabic
-      </Menu.Item>
-        <Menu.Item key="6">
-            Amharic
-      </Menu.Item>
-        <Menu.Item key="7">
-            Kinyarwanda
-      </Menu.Item>
-        <Menu.Item key="8">
-            Kirundi
-      </Menu.Item>
-        <Menu.Item key="8">
-            Tigrinya
-      </Menu.Item>
-    </Menu>
-);
 
 
 export const HeaderSection = () => {
 
+    const [currentLanguage, setCurrentLanguage] = useState("Choose Language");
+
+    const handleLanguageClick = ({ key }) => {
+        console.log("This is it", key)
+        setCurrentLanguage(key)
+    }
+
+    const myCaseMenu = (
+        <Menu>
+            <Menu.Item key="1" >
+                How Can I help my Case
+          </Menu.Item>
+            <Menu.Item key="2" >
+                Updates to My Case
+          </Menu.Item>
+        </Menu>
+    );
+
+    const lang = (
+        <Menu onClick={handleLanguageClick}>
+            <Menu.Item key="English" >
+                English
+          </Menu.Item>
+            <Menu.Item key="Kiswahili">
+                Kiswahili
+          </Menu.Item>
+            <Menu.Item key="Somali">
+                Somali
+          </Menu.Item>
+            <Menu.Item key="Francaise">
+                Francaise
+          </Menu.Item>
+            <Menu.Item key="Arabic">
+                عربى
+          </Menu.Item>
+            <Menu.Item key="Amharic">
+                ቋንቋ ለውጥ
+          </Menu.Item>
+            <Menu.Item key="Kinyarwanda">
+                Kinyarwanda
+          </Menu.Item>
+            <Menu.Item key="Kirundi">
+                Kirundi
+          </Menu.Item>
+            <Menu.Item key="Tigrinya">
+                ትግርኛ
+          </Menu.Item>
+        </Menu>
+    );
+
     const dispatch = useDispatch();
 
-      useEffect(()=>{
-      //getting sms data from drive sheet 
+    useEffect(() => {
+        //getting sms data from drive sheet 
         Tabletop.init({
-      key: '19_ZsP7fNAgjaObkRTGISutIMvfejV0QuI-cpUSHEHCE',
-      callback: googleData => {
-        console.log('google sheet data --->', googleData)
-        //updating store
-       if(googleData.length>2){
-            dispatch(uploadGallery(googleData));
-       }
-        console.log('www',googleData);
-      },
-      simpleSheet: true
-    })
+            key: '19_ZsP7fNAgjaObkRTGISutIMvfejV0QuI-cpUSHEHCE',
+            callback: googleData => {
+                console.log('google sheet data --->', googleData)
+                //updating store
+                if (googleData.length > 2) {
+                    dispatch(uploadGallery(googleData));
+                }
+                console.log('www', googleData);
+            },
+            simpleSheet: true
+        })
 
-    },[]);
+    }, []);
 
     return (
         <>
@@ -139,7 +144,7 @@ export const HeaderSection = () => {
                         <h2>
                             <Dropdown overlay={lang}>
                                 <Button style={{ borderColor: "#ea9b0a", backgroundColor: "#ea9b0a", fontWeight: "bold", color: "black", fontSize: "17px", height: "50px" }}>
-                                    Choose Language <DownOutlined />
+                                    {currentLanguage} <DownOutlined />
                                 </Button>
                             </Dropdown>
 
