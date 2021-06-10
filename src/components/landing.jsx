@@ -1,9 +1,12 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import child from '../images/child-fl4.png'
 import footer from '../images/footer.png'
 import "./landing.css";
 import { Row, Col } from 'antd';
 import "antd/dist/antd.css";
+import { useTranslation } from 'react-i18next'
+import i18next from 'i18next'
+import { useSelector } from 'react-redux';
 
 
 const row1 = {
@@ -34,6 +37,14 @@ const form = {
 
 
 export const LandingSection = () => {
+    const language = useSelector(state => state?.language?.language);
+    const { t } = useTranslation();
+
+    useEffect(() => {
+        console.log("this is the lang", language)
+        i18next.changeLanguage(language)
+    }, [language]);
+
     return (
         <>
             <div style={row1}>
@@ -47,27 +58,24 @@ export const LandingSection = () => {
                 <p className="image-text6">my nibh euismod tincidunt ut laoreet</p>
 
                 <div style={form}>
-                    <h1 style={{ fontWeight: "bold", textAlign: "center", fontSize: "40px" }}>Check My Case</h1>
-                    <p style={{ textAlign: "center", fontSize: "20px", color: "black" }}>Please enter your case number and password below to view your case status.</p>
-                    <input type="text" id="cnum" name="casenumber" placeholder="CASE NUMBER:" style={{ marginBottom: "20px", width: "100%", padding: "23px", backgroundColor: "#dbd6d6" }} />
-                    <input type="password" id="pass" name="password" placeholder="PASSWORD:" style={{ borderColor: "#dbd6d6", marginBottom: "20px", width: "100%", padding: "23px", backgroundColor: "#dbd6d6" }} />
+                    <h1 style={{ fontWeight: "bold", textAlign: "center", fontSize: "40px" }}>{t('check_my_case')}</h1>
+                    <p style={{ textAlign: "center", fontSize: "20px", color: "black" }}>{t('please_text')}</p>
+                    <input type="text" id="cnum" name="casenumber" placeholder={t('case_number')} style={{ marginBottom: "20px", width: "100%", padding: "23px", backgroundColor: "#dbd6d6" }} />
+                    <input type="password" id="pass" name="password" placeholder={t('password')} style={{ borderColor: "#dbd6d6", marginBottom: "20px", width: "100%", padding: "23px", backgroundColor: "#dbd6d6" }} />
                     <div style={{ textAlign: "center" }}>
                         <button style={{ cursor: "pointer", boxShadow: "none", fontWeight: "bold", backgroundColor: "black", color: "white", borderColor: "black", paddingTop: "15px", paddingBottom: "15px", paddingLeft: "30px", paddingRight: "30px" }}>
-                            VIEW CASE STATUS
-                            </button>
+                            {t('view_case')}
+                        </button>
                     </div>
                 </div>
             </div>
             <div style={row2}>
-                <h1 style={{ fontWeight: "bold", fontSize: "45px" }}>How To Use This Website</h1>
-                <p style={{ color: "black", fontSize: "17px" }}>Dear USRAP Applicant,</p>
-                <p style={{ color: "black", fontSize: "17px" }}>This is RSC Africa's My Case site which will help you look up information about your resettlement case to the United States. Use the login panel to the
-right to log in and receive an update of your individual case status.</p>
-                <p style={{ color: "black", fontSize: "17px" }}>You should have been provided with a password by the RSC Africa caseworker that completed your first interview. If you have forgotten your password
-or you would like to change your existing password, please click the "REQUEST PASSWORD CHANGE" link to the left and follow instructions.</p>
-                <p style={{ color: "black", fontSize: "17px" }}>If you have additional questions about your individual case, RSC Africa, or the United States Refugee Admissions Program, you may write to
-Case@CWSAfrica.org. RSC Africa will attempt to respond to your question within 14 calendar days.</p>
-                <p style={{ color: "black", fontSize: "17px" }}>The USRAP is free of charge. Report any solicitation of funds or suspected fraud to Fraud@CWSAfrica.org</p>
+                <h1 style={{ fontWeight: "bold", fontSize: "45px" }}>{t('how_to_use')}</h1>
+                <p style={{ color: "black", fontSize: "17px" }}>{t('dear_text')}</p>
+                <p style={{ color: "black", fontSize: "17px" }}>{t('first_paragraph')}</p>
+                <p style={{ color: "black", fontSize: "17px" }}>{t('second_paragraph')}</p>
+                <p style={{ color: "black", fontSize: "17px" }}>{t('third_paragraph')}</p>
+                <p style={{ color: "black", fontSize: "17px" }}>{t('fourth_paragraph')}</p>
             </div>
 
             <Row style={row3} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
