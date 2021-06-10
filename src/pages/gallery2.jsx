@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/gallery2.css';
 import { Row, Col, Divider, Modal } from 'antd';
 import child from '../images/child-fl4.png';
-import afr from '../images/afr.png'
-import Tabletop from 'tabletop';
+import afr from '../images/afr.png';
 import { Loader } from '../components/loader.jsx';
 import { useSelector } from 'react-redux';
 
