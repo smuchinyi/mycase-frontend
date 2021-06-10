@@ -10,8 +10,10 @@ import Typography from '@material-ui/core/Typography';
 import "./header.css";
 import { Link } from 'react-router-dom';
 import Tabletop from 'tabletop';
-import { useDispatch } from 'react-redux';
 import { uploadGallery } from '../store/actions/galleryActions.js';
+import i18next from 'i18next'
+import { changeLanguage } from "../store/actions/languageActions";
+import { useDispatch, useSelector } from "react-redux";
 
 
 const header = {
@@ -40,8 +42,9 @@ export const HeaderSection = () => {
     const [currentLanguage, setCurrentLanguage] = useState("Choose Language");
 
     const handleLanguageClick = ({ key }) => {
-        console.log("This is it", key)
-        setCurrentLanguage(key)
+        console.log("This is it", key);
+        setCurrentLanguage(key);
+        dispatch(changeLanguage(key));
     }
 
     const myCaseMenu = (

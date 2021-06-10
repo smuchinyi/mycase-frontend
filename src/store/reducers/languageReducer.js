@@ -1,8 +1,8 @@
-import {SET_LANGUAGE} from "../actions/types";
+import { SET_LANGUAGE } from "../actions/types";
 
 const InitialState = {
-  language: 'en',
- 
+  language: 'English',
+
 };
 
 export default (state = InitialState, actions) => {
