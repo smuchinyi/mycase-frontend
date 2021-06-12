@@ -36,3 +36,16 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+@media all and(max-width:600px) {
+   .gallery-row{
+    height: 40px;
+    overflow-y:scroll;
+}
+}
+
+@media all and(min-width:601px) {
+   .gallery-row{
+    height: 40%;
+    overflow-y:scroll;
+}
+}

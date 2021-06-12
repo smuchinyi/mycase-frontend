@@ -8,7 +8,7 @@ import './footer.css';
 
 
 const main = {
-    backgroundColor: "rgb(35,31,32)",
+    backgroundColor: "black",
     padding: 0
 }
 
@@ -76,6 +76,10 @@ Public Resources<br />
 Contact Us<br />
                         </p>
                     </div>
+                    <div>
+                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                            <img src='images/CWS-12.png' style={logo} />
+                        </Popover></div>
                     <div>
                         <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src={cws} style={logo} />
