@@ -5,6 +5,7 @@ import child from '../images/child-fl4.png';
 import afr from '../images/afr.png';
 import { Loader } from '../components/loader.jsx';
 import { useSelector } from 'react-redux';
+import "antd/dist/antd.css";
 
 
 
@@ -39,9 +40,9 @@ export const Gallery = () => {
 
                         <div className="gallery-view" >
 
-                            <Row gutter={16}>
+                            <Row gutter={16} className='gallery-row'>
                                 {photos.map((item, index) => (
-                                    <Col span={6} className="col-image gutter-row" key={index.toString()}>
+                                    <Col xs={24} sm={12} md={6} lg={6} xl={6} className="col-image gutter-row" key={index.toString()}>
                                         <img src={item.URL} alt={item.Id} className='gallery-image' onClick={() => setVisible(true)} />
                                         <Modal
                                             centered
@@ -54,10 +55,10 @@ export const Gallery = () => {
                                             footer={null}
                                         >
                                             <Row>
-                                                <Col span={12}>
+                                                <Col xs={24} sm={12} md={12} lg={12} xl={12}>
                                                     <img src={afr} width="100%" />
                                                 </Col>
-                                                <Col span={12} style={{ backgroundColor: "white", position: "relative" }}>
+                                                <Col xs={24} sm={12} md={12} lg={12} xl={12} style={{ backgroundColor: "white", position: "relative" }}>
                                                     <p className="img-desc">Lorem ipsum dolor sit amet, consectetuer
                                                     adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
 veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea</p>

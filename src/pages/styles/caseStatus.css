@@ -1,13 +1,157 @@
-.case-status{
+
+/* breake-points{
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+} */
+
+/*
+{
+  xs: '480px',
+  sm: '768px',
+  md: '992px',
+  lg: '1200px',
+  xl: '1600px',
+}
+*/
+
+
+/*mobile screens*/
+@media all and(max-width:600px) {
+    .case-status{
+       
+       background-image: none !important;
+    }
+    .status-display{
+        padding: 0px;
+        width: fit-content;
+    }
+
+    .status-body{
+   
+    background-color: rgb(255,255,255);
+    width: fit-content;
+}
+.case-info{
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    /* 0%;width: 6 */
+}
+
+.right-value{
+    font-size: 12px;
+    color: black;
+}
+
+.label{
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: bolder;
+    display: block;
+    width: 150px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
+.help-case{
+    padding: 40px;
+}
+#help-title{
+    font-weight: bolder;
+    margin-top: 20px;
+    font-size: small;
+    text-align: center;
+}
+.help-steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px;
+    font-size: small;
+    
+}
+#info-title{
+    font-weight: bolder;
+}
+
+.contacts{
+    background-color: rgb(227,140,36);
+    padding: 5px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+#contacts-title{
+    font-weight: bolder;
+    font-size: large;
+}
+
+.account-details{
+    padding: 5px 0px 10px 50px;
+}
+
+.details-title{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+.user-info{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px; 
+       
+}
+
+input[type=text],input[type=text]:focus,input[type=file],input[type=file]:focus{
+    border: none;
+    background-color: transparent;
+    width: 150px;
+    outline: none;
+ }
+   
+}
+
+/*ipads and bigger screens*/
+@media screen and (min-width: 601px) {
+ 
+    .case-status{
     height: 850px;
     position: relative;
+    background-image: url(/src/images/child-fl4.png);
+    background-size: 100% 850px;
+    object-fit: cover;
+    filter: brightness(60%);
+    width:100%;
+    
     
 }
 
+  .status-display{
+    padding: 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 400px;
+    width: 80%;
+    display: block;
+    border-radius: 1px;
+}
 .bg-image{
     object-fit: cover;
     filter: brightness(60%);
+    width:100%;
+    height:850px 
 }
+}
+
+
 .status{
     position: absolute; 
     top: 60px;
@@ -22,16 +166,8 @@
     font-size: 40px;
     font-weight: bolder;
 }
-.status-display{
-    padding: 40px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 400px;
-    width: 80%;
-    display: block;
-    border-radius: 1px;
-}
+
+
 .status-head{
     background-color:rgb(16,77,132) ;
     text-align: center;
