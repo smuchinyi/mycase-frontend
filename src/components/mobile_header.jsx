@@ -14,11 +14,11 @@ import { uploadGallery } from '../store/actions/galleryActions.js';
 import i18next from 'i18next'
 import { changeLanguage } from "../store/actions/languageActions";
 import { useDispatch, useSelector } from "react-redux";
+import MenuIcon from '@material-ui/icons/Menu';
 
 
 const header = {
-    padding: "50px",
-    height: "320px"
+    padding: "10px",
 
 }
 
@@ -37,12 +37,11 @@ const rightCol = {
 
 
 
-export const HeaderSection = () => {
+export const MobileHeaderSection = () => {
 
     const [currentLanguage, setCurrentLanguage] = useState("Choose Language");
 
     const handleLanguageClick = ({ key }) => {
-        console.log("This is it", key);
         setCurrentLanguage(key);
         dispatch(changeLanguage(key));
     }
@@ -90,9 +89,33 @@ export const HeaderSection = () => {
         </Menu>
     );
 
+    const menu = (
+        <Menu>
+            <Menu.Item>
+                <h3 className="nav-link">
+                    <Dropdown overlay={myCaseMenu}>
+                        <h4 className="nav-link">Check my Case</h4>
+                    </Dropdown>
+                </h3>
+            </Menu.Item>
+            <Menu.Item>
+                <h3 className="nav-link">Refugee Resources</h3>
+            </Menu.Item>
+            <Menu.Item>
+                <h3 className="nav-link">Public Resources</h3>
+            </Menu.Item>
+            <Menu.Item>
+                <h3 className="nav-link">Gallery</h3>
+            </Menu.Item>
+            <Menu.Item>
+                <h3 className="nav-link">Contact Us</h3>
+            </Menu.Item>
+        </Menu>
+    );
+
     const dispatch = useDispatch();
 
-    const fetchData = React.useCallback(() => {
+    useEffect(() => {
         //getting sms data from drive sheet 
         Tabletop.init({
             key: '19_ZsP7fNAgjaObkRTGISutIMvfejV0QuI-cpUSHEHCE',
@@ -107,56 +130,37 @@ export const HeaderSection = () => {
             simpleSheet: true
         })
 
-     },[]);
-
-    useEffect(() => {
-    fetchData()
-  }, [fetchData])
+    }, []);
 
     return (
         <>
             <div style={header}>
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                    <Col span={8} style={leftCol}>
-                        <img src={flagUs} height={70} />
-                    </Col>
-                    <Col span={8} style={middleCol}>
+
+                    <Col span={24} style={middleCol}>
                         <Link to='/'><img src={rsc} height={120} /></Link>
                     </Col>
-                    <Col span={8} style={rightCol}>
-                        <img src={cws} height={70} />
-                    </Col>
+
                 </Row>
-                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{ padding: "80px", textAlign: "center" }}>
-                    <Col span={4}>
-                        <h2 className="nav-link">
-                            <Dropdown overlay={myCaseMenu}>
-                                <h4 className="nav-link">Check my Case</h4>
-                            </Dropdown>
-                        </h2>
+                <Row style={{ padding: "15px" }}>
+
+                    <Col span={2} style={leftCol}>
+                        <Dropdown overlay={menu}>
+                            <MenuIcon style={{ fontSize: "48px" }} />
+                        </Dropdown>
                     </Col>
-                    <Col span={4}>
-                        <h2 className="nav-link">Refugee Resources</h2>
-                    </Col>
-                    <Col span={4}>
-                        <h2 className="nav-link">Public Resources</h2>
-                    </Col>
-                    <Col span={4}>
-                        <h2 className="nav-link"><Link to='/gallery' className="nav-link" onClick={fetchData}>Gallery</Link></h2>
-                    </Col>
-                    <Col span={4}>
-                        <h2 className="nav-link">Contact Us</h2>
-                    </Col>
-                    <Col span={4}>
-                        <h2>
+
+                    <Col span={12} offset={6} style={rightCol}>
+                        <h3>
                             <Dropdown overlay={lang}>
                                 <Button style={{ borderColor: "#ea9b0a", backgroundColor: "#ea9b0a", fontWeight: "bold", color: "black", fontSize: "17px", height: "50px" }}>
                                     {currentLanguage} <DownOutlined />
                                 </Button>
                             </Dropdown>
 
-                        </h2>
+                        </h3>
                     </Col>
+
                 </Row>
             </div>
         </>

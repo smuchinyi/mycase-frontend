@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './styles/caseStatus.css';
 import Swal from 'sweetalert2';
-import { Footer } from 'antd/lib/layout/layout';
 import child from '../images/child-fl4.png'
 import { Row, Col } from 'antd';
 import "antd/dist/antd.css";
