@@ -6,7 +6,7 @@ import { Footer, FooterSection } from './components/footer.jsx';
 import { HeaderSection } from './components/header.jsx';
 import { Gallery } from './pages/gallery2.jsx';
 import {NotFound } from './pages/NotFound.jsx';
-import {Pdf} from './pages/pdfPage';
+
 
 
 
@@ -20,7 +20,6 @@ function App() {
           <Route exact path='/' component={Home} />
           <Route exact path='/status' component={Case} />
           <Route exact path='/gallery' component={Gallery} />
-           <Route exact path='/pdf' component={Pdf} />
           <Route component={NotFound}/>
         </Switch>
         <FooterSection />
