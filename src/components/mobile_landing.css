@@ -1,0 +1,55 @@
+.bg-image{
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.mobile-image-text1{
+    color:white;
+    position:absolute;
+    top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    left: 20px;
+}
+
+
+.mobile-image-text2{
+    color:white;
+    position:absolute;
+    top: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    left: 20px;
+}
+
+.mobile-image-text3{
+    color:white;
+    position:absolute;
+    top: 80px;
+    font-size: 15px;
+    font-weight: bold;
+    left: 20px;
+}
+
+.mobile-image-text4{
+    color:white;
+    position:absolute;
+    top: 120px;
+    font-size: 13px;
+    left: 20px;
+}
+.mobile-image-text5{
+    color:white;
+    position:absolute;
+    top: 140px;
+    font-size: 13px;
+    left: 20px;
+}
+.mobile-image-text6{
+    color:white;
+    position:absolute;
+    top: 160px;
+    font-size: 13px;
+    left: 20px;
+}
+
