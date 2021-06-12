@@ -92,7 +92,7 @@ export const HeaderSection = () => {
 
     const dispatch = useDispatch();
 
-    useEffect(() => {
+    const fetchData = React.useCallback(() => {
         //getting sms data from drive sheet 
         Tabletop.init({
             key: '19_ZsP7fNAgjaObkRTGISutIMvfejV0QuI-cpUSHEHCE',
@@ -107,7 +107,11 @@ export const HeaderSection = () => {
             simpleSheet: true
         })
 
-    }, []);
+     },[]);
+
+    useEffect(() => {
+    fetchData()
+  }, [fetchData])
 
     return (
         <>
@@ -138,7 +142,7 @@ export const HeaderSection = () => {
                         <h2 className="nav-link">Public Resources</h2>
                     </Col>
                     <Col span={4}>
-                        <h2 className="nav-link"><Link to='/gallery' className="nav-link">Gallery</Link></h2>
+                        <h2 className="nav-link"><Link to='/gallery' className="nav-link" onClick={fetchData}>Gallery</Link></h2>
                     </Col>
                     <Col span={4}>
                         <h2 className="nav-link">Contact Us</h2>
