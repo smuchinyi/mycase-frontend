@@ -26,8 +26,8 @@ const content = (
 
 
 const logo = {
-    height: 50,
-    with: 40
+    height: 25,
+    with: 20
 }
 
 
@@ -76,6 +76,10 @@ Public Resources<br />
 Contact Us<br />
                         </p>
                     </div>
+                    <div>
+                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                            <img src='images/CWS-12.png' style={logo} />
+                        </Popover></div>
                     <div>
                         <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src={cws} style={logo} />

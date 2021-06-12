@@ -19,7 +19,8 @@ const row1 = {
 const row2 = {
     height: "500px",
     baackgroundColor: "white",
-    padding: "50px"
+    padding: "50px",
+    marginTop:'100px'
 }
 
 const row3 = {
@@ -34,7 +35,8 @@ const form = {
     bottom: "0px",
     top: "350px",
     right: "40px",
-    padding: "20px"
+    padding: "20px",
+    marginTop:'100px'
 }
 
 
