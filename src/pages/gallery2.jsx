@@ -55,7 +55,7 @@ export const Gallery = () => {
                                         >
                                             <Row>
                                                 <Col xs={24} sm={12} md={12} lg={12} xl={12}>
-                                                    <img src={afr} width="100%" />
+                                                    <img src={item.URL} alt={item.Id} width="100%" />
                                                 </Col>
                                                 <Col xs={24} sm={12} md={12} lg={12} xl={12} style={{ backgroundColor: "white", position: "relative" }}>
                                                     <p className="img-desc">Lorem ipsum dolor sit amet, consectetuer
