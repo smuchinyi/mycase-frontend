@@ -40,7 +40,7 @@ const rightCol = {
 export const MobileHeaderSection = () => {
 
     const [currentLanguage, setCurrentLanguage] = useState("Choose Language");
-
+    const [photos,setPhotos] = useState([]);
     const handleLanguageClick = ({ key }) => {
         setCurrentLanguage(key);
         dispatch(changeLanguage(key));
@@ -57,14 +57,18 @@ export const MobileHeaderSection = () => {
                 //updating store
                 if (googleData.length > 2) {
                     dispatch(uploadGallery(googleData));
+                    setPhotos(googleData);
                 }
                 console.log('www', googleData);
             },
             simpleSheet: true
         })
 
-     },[]);
+     },[]); 
 
+    useEffect(() => {
+    fetchData()
+  }, [photos]) 
 
     const myCaseMenu = (
         <Menu>

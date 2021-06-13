@@ -40,6 +40,7 @@ const rightCol = {
 export const HeaderSection = () => {
 
     const [currentLanguage, setCurrentLanguage] = useState("Choose Language");
+    const [photos,setPhotos] = useState([]);
 
     const handleLanguageClick = ({ key }) => {
         console.log("This is it", key);
@@ -101,6 +102,7 @@ export const HeaderSection = () => {
                 //updating store
                 if (googleData.length > 2) {
                     dispatch(uploadGallery(googleData));
+                    setPhotos(googleData);
                 }
                 console.log('www', googleData);
             },
@@ -111,7 +113,7 @@ export const HeaderSection = () => {
 
     useEffect(() => {
     fetchData()
-  }, [fetchData])
+  }, [photos])
 
     return (
         <>
