@@ -46,6 +46,26 @@ export const MobileHeaderSection = () => {
         dispatch(changeLanguage(key));
     }
 
+     const dispatch = useDispatch();
+
+    const fetchData = React.useCallback(() => {
+        //getting sms data from drive sheet 
+        Tabletop.init({
+            key: '19_ZsP7fNAgjaObkRTGISutIMvfejV0QuI-cpUSHEHCE',
+            callback: googleData => {
+                console.log('google sheet data --->', googleData)
+                //updating store
+                if (googleData.length > 2) {
+                    dispatch(uploadGallery(googleData));
+                }
+                console.log('www', googleData);
+            },
+            simpleSheet: true
+        })
+
+     },[]);
+
+
     const myCaseMenu = (
         <Menu>
             <Menu.Item key="1" >
@@ -105,7 +125,7 @@ export const MobileHeaderSection = () => {
                 <h3 className="nav-link">Public Resources</h3>
             </Menu.Item>
             <Menu.Item>
-                <h3 className="nav-link">Gallery</h3>
+               <Link to='/gallery' onClick={fetchData}> <h3 className="nav-link" onClick={fetchData}>Gallery</h3></Link>
             </Menu.Item>
             <Menu.Item>
                 <h3 className="nav-link">Contact Us</h3>
@@ -113,25 +133,7 @@ export const MobileHeaderSection = () => {
         </Menu>
     );
 
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        //getting sms data from drive sheet 
-        Tabletop.init({
-            key: '19_ZsP7fNAgjaObkRTGISutIMvfejV0QuI-cpUSHEHCE',
-            callback: googleData => {
-                console.log('google sheet data --->', googleData)
-                //updating store
-                if (googleData.length > 2) {
-                    dispatch(uploadGallery(googleData));
-                }
-                console.log('www', googleData);
-            },
-            simpleSheet: true
-        })
-
-    }, []);
-
+   
     return (
         <>
             <div style={header}>
