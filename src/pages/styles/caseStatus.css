@@ -1,25 +1,5 @@
-
-/* breake-points{
-320px — 480px: Mobile devices
-481px — 768px: iPads, Tablets
-769px — 1024px: Small screens, laptops
-1025px — 1200px: Desktops, large screens
-1201px and more —  Extra large screens, TV
-} */
-
-/*
-{
-  xs: '480px',
-  sm: '768px',
-  md: '992px',
-  lg: '1200px',
-  xl: '1600px',
-}
-*/
-
-
-/*mobile screens*/
-@media all and(max-width:600px) {
+@media screen and(max-width:600px) {
+    /*mobile screens*/
     .case-status{
        
        background-image: none !important;
@@ -118,9 +98,9 @@ input[type=text],input[type=text]:focus,input[type=file],input[type=file]:focus{
    
 }
 
-/*ipads and bigger screens*/
+
 @media screen and (min-width: 601px) {
- 
+    /*ipads and bigger screens*/
     .case-status{
     height: 850px;
     position: relative;
