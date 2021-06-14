@@ -51,10 +51,10 @@ export const HeaderSection = () => {
     const myCaseMenu = (
         <Menu>
             <Menu.Item key="1" >
-                How Can I help my Case
+               <Link to='/status' className="menu-item">How Can I help my Case</Link>
           </Menu.Item>
             <Menu.Item key="2" >
-                Updates to My Case
+                <Link to="/status" className="menu-item">Updates to My Case</Link>
           </Menu.Item>
         </Menu>
     );

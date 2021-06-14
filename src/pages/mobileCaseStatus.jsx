@@ -42,7 +42,7 @@ export const MobileCase = () => {
     return (
         <>
             <div className='mobile-case-status'>
-                <img src={child} width="100%" className="bg-image" />
+                {/* <img src={child} width="100%" className="bg-image" /> */}
                 <span className='mobile-status'>Case Status</span>
                 <div className="mobile-status-display">
                     <div className="mobile-status-head">

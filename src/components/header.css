@@ -3,6 +3,6 @@
     color: rgb(73,70,71);
 }
 
-.nav-link:hover,.nav-link:active{
+.nav-link:hover,.nav-link:active,.menu-item,.menu-item:hover{
     color: green
 }
