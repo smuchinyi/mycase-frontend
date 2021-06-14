@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import './styles/caseStatus.css';
+import './styles/mobileCaseStatus.css';
 import Swal from 'sweetalert2';
 import { Footer } from 'antd/lib/layout/layout';
 import child from '../images/child-fl4.png'
 import { Row, Col } from 'antd';
 import "antd/dist/antd.css";
 
-export const Case = () => {
+export const MobileCase = () => {
 
     const formValidator = (e) => {
         e.preventDefault();
@@ -41,24 +41,24 @@ export const Case = () => {
     }
     return (
         <>
-            <div className='case-status'>
-                <img src={child} width="100%" height="850px" className="bg-image" />
-                <span className='status'>Case Status</span>
-                <div className="status-display">
-                    <div className="status-head">
-                        <p id='header'>STATUS: HOLD</p>
+            <div className='mobile-case-status'>
+                <img src={child} width="100%" className="bg-image" />
+                <span className='mobile-status'>Case Status</span>
+                <div className="mobile-status-display">
+                    <div className="mobile-status-head">
+                        <p id='mobile-header'>STATUS: HOLD</p>
                         <p>Your case is currently on hold. A representative from RSC Africa will<br />
 
                             contact you if any additional information is required.</p>
                     </div>
-                    <div className="status-body">
-                        <div className='case-info'> <span className='label'>RSC Interview:</span><span className="right-value">You have completed this step of the process</span></div>
-                        <div className='case-info'> <span className='label'>USCIS Interview:</span><span className="right-value">You have completed this step of the process</span></div>
-                        <div className='case-info'> <span className='label'>Security Status:
+                    <div className="mobile-status-body">
+                        <div className='mobile-case-info'> <span className='mobile-label'>RSC Interview:</span><span className="mobile-right-value">You have completed this step of the process</span></div>
+                        <div className='mobile-case-info'> <span className='mobile-label'>USCIS Interview:</span><span className="mobile-right-value">You have completed this step of the process</span></div>
+                        <div className='mobile-case-info'> <span className='mobile-label'>Security Status:
                         </span><span>In Process</span></div>
-                        <div className='case-info'> <span className='label'>Medical Status:</span><span className="right-value">___</span></div>
-                        <div className='case-info'> <span className='label'>Cultural Orientation:</span><span className="right-value">___</span></div>
-                        <div className='case-info'> <span className='label'>Travel Status:</span><span className="right-value">___</span></div>
+                        <div className='mobile-case-info'> <span className='mobile-label'>Medical Status:</span><span className="mobile-right-value">___</span></div>
+                        <div className='mobile-case-info'> <span className='mobile-label'>Cultural Orientation:</span><span className="mobile-right-value">___</span></div>
+                        <div className='mobile-case-info'> <span className='mobile-label'>Travel Status:</span><span className="mobile-right-value">___</span></div>
                     </div>
                 </div>
 
@@ -67,14 +67,14 @@ export const Case = () => {
             <div className='helpCase'>
                 <div id='help-title'><span >How Can I Help MyCase</span></div>
                 <Row>
-                    <Col span={8} className="col-items">
+                    <Col span={24} className="col-items">
                         <img src='images/CWS-08.png' width="50%" />
                         <span id='info-title'>Always Tell the Truth</span>
                         <p>
                             Knowingly providing false information can affect
                             your eligibility for resettlement to the United States.</p>
                     </Col>
-                    <Col span={8} className="col-items">
+                    <Col span={24} className="col-items">
                         <img src='images/CWS-09.png' width="50%" />
                         <span id='info-title'>Come to All Your Appointments</span>
                         <p>
@@ -82,7 +82,7 @@ export const Case = () => {
                             interviews, IOM medical appointments, and cultural
                             orientation sessions.</p>
                     </Col>
-                    <Col span={8} className="col-items">
+                    <Col span={24} className="col-items">
                         <img src='images/CWS-07.png' width="50%" />
                         <span id='info-title'>Bring All Important Documents to Interviews</span>
                         <p>
@@ -91,15 +91,13 @@ export const Case = () => {
                             and any registration documents.
                         </p>
                     </Col>
-                </Row>
-                <Row>
-                    <Col span={8} className="col-items">
+                    <Col span={24} className="col-items">
                         <img src='images/CWS-11.png' width="50%" />
                         <span id='info-title'>Inform Us of Any Changes to Your Family</span>
                         <p>Tell RSC Africa about any marriages, deaths or births that
                             have happened for members on your case.</p>
                     </Col>
-                    <Col span={8} className="col-items">
+                    <Col span={24} className="col-items">
                         <img src='images/CWS-10.png' width="50%" />
                         <span id='info-title'>Provide All of Your Contact Information</span>
                         <p>
@@ -109,7 +107,7 @@ export const Case = () => {
                             the resettlement process.
                         </p>
                     </Col>
-                    <Col span={8} className="col-items">
+                    <Col span={24} className="col-items">
                         <img src='images/CWS-06.png' width="50%" />
                         <span id='info-title'>Inform Us if You Move</span>
                         <p>
@@ -132,7 +130,7 @@ export const Case = () => {
                 </p>
             </div>
 
-            <div className="account-details">
+            <div className="mobile-account-details">
                 <form name="caseForm">
                     <div className='details-title'>
                         <span>Account Details</span>

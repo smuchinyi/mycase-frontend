@@ -1,8 +1,9 @@
 import './App.css';
 import { Home } from './pages/home.jsx';
 import { Case } from './pages/caseStatus.jsx';
+import { MobileCase } from './pages/mobileCaseStatus.jsx';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import {  FooterSection } from './components/footer.jsx';
+import { FooterSection } from './components/footer.jsx';
 import { HeaderSection } from './components/header.jsx';
 import { MobileHeaderSection } from './components/mobile_header.jsx';
 import { Gallery } from './pages/gallery2.jsx';
@@ -25,7 +26,9 @@ function App() {
         }
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/status' component={Case} />
+          {
+            matches ? <Route exact path='/status' component={MobileCase} /> : <Route exact path='/status' component={Case} />
+          }
           <Route exact path='/gallery' component={Gallery} />
           <Route component={NotFound} />
         </Switch>

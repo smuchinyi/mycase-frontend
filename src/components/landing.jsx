@@ -20,7 +20,7 @@ const row2 = {
     height: "500px",
     baackgroundColor: "white",
     padding: "50px",
-    marginTop:'100px'
+    marginTop: '100px'
 }
 
 const row3 = {
@@ -36,7 +36,7 @@ const form = {
     top: "350px",
     right: "40px",
     padding: "20px",
-    marginTop:'100px'
+    marginTop: '100px'
 }
 
 
@@ -98,10 +98,10 @@ export const LandingSection = () => {
                                     style={{ marginRight: 10 }}
                                 >
                                     Send Request
-                                        </Button>,
+                                </Button>,
                                 <Button variant="contained" onClick={handleCancel} >
                                     Cancel
-                                        </Button>,
+                                </Button>,
                             ]}
                         >
                             <TextField
@@ -163,23 +163,23 @@ export const LandingSection = () => {
                 <Col span={16} style={{ backgroundColor: "#353582", padding: "50px", textAlign: "center" }}>
                     <h1 style={{ color: "white", fontWeight: "bold", fontSize: "45px" }}>Notice</h1>
                     <p style={{ color: "white", fontSize: "18px" }}>The U.S. Government and RSC Africa, operated by CWS, are dedicated to ensuring the safety
-                    and security of refugee applicants and our staff around the world who support the U.S. Refugee
-                    Admissions Program (USRAP). For the latest information regarding COVID-19 and how to best
-                    protect yourself and your family, please visit the Centers for Disease Control and Prevention’s
-(CDC) website: https://www.cdc.gov/coronavirus/2019-ncov/index.html.</p>
+                        and security of refugee applicants and our staff around the world who support the U.S. Refugee
+                        Admissions Program (USRAP). For the latest information regarding COVID-19 and how to best
+                        protect yourself and your family, please visit the Centers for Disease Control and Prevention’s
+                        (CDC) website: https://www.cdc.gov/coronavirus/2019-ncov/index.html.</p>
                     <p style={{ color: "white", fontSize: "18px" }}>RSC Africa continues to process cases for departure that conform to the FY 2021 Presidential
-                    Determination (PD) on Refugee Admissions. Cases that do not fall under one of the categories
-                    in the PD will not be able to depart to the United States at this time. These cases will remain
-                    open and the RSC will reach out to the applicant if there is any action needed on the case.
-                    Given the changes to the USRAP program categories this fiscal year, we urge applicants to
-remain patient.</p>
+                        Determination (PD) on Refugee Admissions. Cases that do not fall under one of the categories
+                        in the PD will not be able to depart to the United States at this time. These cases will remain
+                        open and the RSC will reach out to the applicant if there is any action needed on the case.
+                        Given the changes to the USRAP program categories this fiscal year, we urge applicants to
+                        remain patient.</p>
                     <p style={{ color: "white", fontSize: "18px" }}>The RSC is continuing to operate at reduced levels, and has temporarily postponed in-person
-                    processing and appointments (if applicable) for the safety of staff and refugee clients. Please
-                    check our website at mycase.rscafrica.org for general updates on USRAP processing and RSC
-                    operations. As updates for your specific case become available, we will inform you. In the
-                    meantime, please feel free to contact us if you have updates or questions about your case. As
-                    the volume of inquiries may be high, there may be delays and we kindly ask for your patience in
-addressing non-urgent matters.</p>
+                        processing and appointments (if applicable) for the safety of staff and refugee clients. Please
+                        check our website at mycase.rscafrica.org for general updates on USRAP processing and RSC
+                        operations. As updates for your specific case become available, we will inform you. In the
+                        meantime, please feel free to contact us if you have updates or questions about your case. As
+                        the volume of inquiries may be high, there may be delays and we kindly ask for your patience in
+                        addressing non-urgent matters.</p>
                 </Col>
                 <Col span={8} style={{ backgroundColor: "#353582" }}>
                     <img src={footer} width="100%" height="700px" style={{ objectFit: "cover" }} />

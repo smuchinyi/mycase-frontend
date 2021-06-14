@@ -40,13 +40,13 @@ const rightCol = {
 export const MobileHeaderSection = () => {
 
     const [currentLanguage, setCurrentLanguage] = useState("Choose Language");
-    const [photos,setPhotos] = useState([]);
+    const [photos, setPhotos] = useState([]);
     const handleLanguageClick = ({ key }) => {
         setCurrentLanguage(key);
         dispatch(changeLanguage(key));
     }
 
-     const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
     const fetchData = React.useCallback(() => {
         //getting sms data from drive sheet 
@@ -64,20 +64,20 @@ export const MobileHeaderSection = () => {
             simpleSheet: true
         })
 
-     },[]); 
+    }, []);
 
     useEffect(() => {
-    fetchData()
-  }, [photos]) 
+        fetchData()
+    }, [photos])
 
     const myCaseMenu = (
         <Menu>
             <Menu.Item key="1" >
                 How Can I help my Case
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="2" >
                 Updates to My Case
-          </Menu.Item>
+            </Menu.Item>
         </Menu>
     );
 
@@ -85,31 +85,31 @@ export const MobileHeaderSection = () => {
         <Menu onClick={handleLanguageClick}>
             <Menu.Item key="English" >
                 English
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Kiswahili">
                 Kiswahili
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Somali">
                 Somali
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Francaise">
                 Francaise
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Arabic">
                 عربى
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Amharic">
                 ቋንቋ ለውጥ
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Kinyarwanda">
                 Kinyarwanda
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Kirundi">
                 Kirundi
-          </Menu.Item>
+            </Menu.Item>
             <Menu.Item key="Tigrinya">
                 ትግርኛ
-          </Menu.Item>
+            </Menu.Item>
         </Menu>
     );
 
@@ -129,7 +129,7 @@ export const MobileHeaderSection = () => {
                 <h3 className="nav-link">Public Resources</h3>
             </Menu.Item>
             <Menu.Item>
-               <Link to='/gallery' onClick={fetchData}> <h3 className="nav-link" onClick={fetchData}>Gallery</h3></Link>
+                <Link to='/gallery' onClick={fetchData}> <h3 className="nav-link" onClick={fetchData}>Gallery</h3></Link>
             </Menu.Item>
             <Menu.Item>
                 <h3 className="nav-link">Contact Us</h3>
@@ -137,14 +137,20 @@ export const MobileHeaderSection = () => {
         </Menu>
     );
 
-   
+
     return (
         <>
             <div style={header}>
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
 
-                    <Col span={24} style={middleCol}>
-                        <Link to='/'><img src={rsc} height={120} /></Link>
+                    <Col span={8} style={leftCol}>
+                        <img src={flagUs} height={40} />
+                    </Col>
+                    <Col span={8} style={middleCol}>
+                        <Link to='/'><img src={rsc} height={50} /></Link>
+                    </Col>
+                    <Col span={8} style={rightCol}>
+                        <img src={cws} height={40} />
                     </Col>
 
                 </Row>

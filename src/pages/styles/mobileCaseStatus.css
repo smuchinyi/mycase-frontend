@@ -1,4 +1,4 @@
-.case-status{
+.mobile-case-status{
     height: 850px;
     position: relative;
     
@@ -8,7 +8,7 @@
     object-fit: cover;
     filter: brightness(60%);
 }
-.status{
+.mobile-status{
     position: absolute; 
     top: 60px;
     left: 50%;
@@ -18,51 +18,49 @@
     font-size: 38px;
     color: white;
 }
-#header{
-    font-size: 40px;
+#mobile-header{
+    font-size: 15px;
     font-weight: bolder;
 }
-.status-display{
-    padding: 40px;
+.mobile-status-display{
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 400px;
-    width: 80%;
+    top: 450px;
+    width: 100%;
     display: block;
     border-radius: 1px;
 }
-.status-head{
+.mobile-status-head{
     background-color:rgb(16,77,132) ;
     text-align: center;
     color:rgb(255,255,255);
     font-family:sans-serif;
-    font-size: 18px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 10px;
 
 }
-.status-body{
-    padding-left: 100px;
+.mobile-status-body{
+    padding-left: 50px;
     padding-top: 10px;
     padding-bottom: 50px;
     background-color: rgb(255,255,255);
 }
-.case-info{
+.mobile-case-info{
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
     /* justify-content: space-between; */
     /* 0%;width: 6 */
 }
 
-.right-value{
+.mobile-right-value{
     font-size: 16px;
     color: black;
 }
 
-.label{
-    margin-right: 50px;
-    font-size: 20px;
+.mobile-label{
+    font-size: 15px;
     font-weight: bolder;
     display: block;
     width: 200px;
@@ -112,8 +110,8 @@
     font-size: x-large;
 }
 
-.account-details{
-    padding: 10px 0px 20px 100px;
+.mobile-account-details{
+    padding: 10px 0px 20px 50px;
 }
 
 .details-title{
