@@ -12,7 +12,8 @@ import Button from '@material-ui/core/Button';
 
 
 const row1 = {
-    position: "relative"
+    position: "relative",
+    textAlign:'center'
 }
 
 const row2 = {

@@ -54,6 +54,13 @@ export const MobileFooterSection = () => {
 
                 <div className='mobile-footer-last'>
                     <div>
+                        <div className='core-logo'>
+                            <div>
+                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                            <img src='images/CWS-12.png' style={logo} />
+                        </Popover></div>
+                        </div>
+                        <div className='footer-contacts'>
                         <span className='contact-title'>
                             RSC CONTACT INFORMATION:
                         </span>
@@ -61,10 +68,16 @@ export const MobileFooterSection = () => {
                             P.O. Box 14176-00800,<br />
                             Nairobi, Kenya<br />
                             Email: case@CWSAfrica.org
-                        </p>
+                        </p></div>
 
                     </div>
                     <div>
+                        <div className='wcs-logo'>
+                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                            <img src={cws} style={logo} />
+                        </Popover>
+                        </div>
+                    <div className='site-map'>
                         <span className='site-title'>
                             SITEMAP
                         </span>
@@ -76,14 +89,9 @@ export const MobileFooterSection = () => {
                             Contact Us<br />
                         </p>
                     </div>
-                    <div>
-                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
-                            <img src='images/CWS-12.png' style={logo} />
-                        </Popover></div>
-                    <div>
-                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
-                            <img src={cws} style={logo} />
-                        </Popover></div>
+                    </div>
+                    
+                    
                 </div>
 
 

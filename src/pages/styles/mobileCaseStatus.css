@@ -1,6 +1,6 @@
 .mobile-case-status{
-    height: 850px;
     position: relative;
+    height: 550px;
     
 }
 
@@ -10,13 +10,13 @@
 }
 .mobile-status{
     position: absolute; 
-    top: 60px;
-    left: 50%;
     text-align: center;
-    transform: translate(-50%, -50%);
+    display: block;
+    width: 100%;
     font-weight: bold;
     font-size: 38px;
     color:black;
+    margin-bottom: 40px;
 }
 #mobile-header{
     font-size: 15px;
@@ -26,10 +26,11 @@
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
-    top: 450px;
+    top: 300px;
     width: 100%;
     display: block;
     border-radius: 1px;
+    
 }
 .mobile-status-head{
     background-color:rgb(16,77,132) ;
@@ -41,9 +42,10 @@
 
 }
 .mobile-status-body{
-    padding-left: 50px;
+    /* padding-left: 50px;
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 50px; */
+    padding: 6px;
     background-color: rgb(255,255,255);
 }
 .mobile-case-info{
@@ -78,12 +80,12 @@
 }
 
 .help-case{
-    padding: 80px;
+    padding: 50px;
 }
 #help-title{
     font-weight: bolder;
-    margin-top: 30px;
-    font-size: 48px;
+    margin-top: 0px;
+    font-size: 28px;
     text-align: center;
 }
 
