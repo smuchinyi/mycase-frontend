@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/gallery2.css';
 import { Row, Col, Modal } from 'antd';
 import afr from '../images/afr.png';
-import { Loader } from '../components/loader.jsx';
+import { Load} from '../components/loader.jsx';
 import { useSelector } from 'react-redux';
 import "antd/dist/antd.css";
 
@@ -33,9 +33,9 @@ export const Gallery = () => {
         <>
             <div className="main-container">
                 {photos?.length > 0 ? (
-                    <div>
-                        <h1 className="title-gallery">Our Gallery</h1>
-                        <h1 className='album-name'>Album Name</h1>
+                    <div >
+                       <div className='gal-div'> <h1 className="title-gallery">Our Gallery</h1></div>
+                        <span className='album-name'>Album Name</span>
 
                         <div className="gallery-view" >
 
@@ -72,7 +72,7 @@ veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
                             </Row>
                         </div>
                     </div>
-                ) : (<Loader />)}
+                ) : (<Load />)}
 
             </div>
         </>

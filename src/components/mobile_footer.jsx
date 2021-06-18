@@ -8,7 +8,7 @@ import './mobile_footer.css';
 
 
 const main = {
-    backgroundColor: "rgb(35,31,32)",
+    backgroundColor: "#000000",
     padding: 0
 }
 
@@ -26,8 +26,8 @@ const content = (
 
 
 const logo = {
-    height: 25,
-    with: 20
+    height: 50,
+    
 }
 
 
@@ -51,15 +51,20 @@ export const MobileFooterSection = () => {
                     funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended.
                     The opinions, findings, and conclusions stated herein are those of the author and do not necessarily reflect those of the United
                     States Department of State.</span></div>
-
-                <div className='mobile-footer-last'>
-                    <div>
-                        <div className='core-logo'>
+                    <div className='core-logo'>
                             <div>
                         <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src='images/CWS-12.png' style={logo} />
                         </Popover></div>
                         </div>
+                    <div className='wcs-logo'>
+                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                            <img src={cws} style={logo} />
+                        </Popover>
+                        </div>
+                <div className='mobile-footer-last'>
+                    <div>
+                        
                         <div className='footer-contacts'>
                         <span className='contact-title'>
                             RSC CONTACT INFORMATION:
@@ -72,11 +77,7 @@ export const MobileFooterSection = () => {
 
                     </div>
                     <div>
-                        <div className='wcs-logo'>
-                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
-                            <img src={cws} style={logo} />
-                        </Popover>
-                        </div>
+                        
                     <div className='site-map'>
                         <span className='site-title'>
                             SITEMAP

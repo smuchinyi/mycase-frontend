@@ -117,9 +117,9 @@ export const MobileHeaderSection = () => {
         <Menu>
             <Menu.Item>
                 <h3 className="nav-link">
-                    <Dropdown overlay={myCaseMenu}>
-                        <h4 className="nav-link">Check my Case</h4>
-                    </Dropdown>
+                    {/* <Dropdown overlay={myCaseMenu}> */}
+                        <h4 className="nav-link"><Link to ='/status' className="nav-link">Check my Case</Link></h4>
+                    {/* </Dropdown> */}
                 </h3>
             </Menu.Item>
             <Menu.Item>

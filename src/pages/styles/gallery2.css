@@ -1,14 +1,13 @@
-.title-gallery{
-    text-align: center;
-    font-size: 40px;
-    font-weight: bold;
-}
+
 
 .main-container{
     padding: 50px;
 
 }
 
+.gal-div{
+    text-align: center;
+}
 .album-name{
     font-weight: bold;
 }
@@ -39,13 +38,24 @@
 @media screen and(max-width:600px) {
    .gallery-row{
     height: 40px;
-    overflow-y:scroll;
+    overflow:auto;
 }
+
+.title-gallery{
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+
 }
 
 @media screen and(min-width:601px) {
    .gallery-row{
     height: 40%;
     overflow-y:scroll;
+}
+.title-gallery{
+    font-size: 60px;
+    font-weight: bolder;
 }
 }

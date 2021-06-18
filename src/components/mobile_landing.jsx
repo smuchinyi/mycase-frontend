@@ -19,22 +19,25 @@ const row1 = {
 const row2 = {
     baackgroundColor: "white",
     padding: "50px",
-    marginTop: "380px"
+    marginTop: "0px",
+    scrollX:'auto',
+    fontSize: '1.2vmin'
+    
 }
 
 const row3 = {
 }
 
 const form = {
-    height: "600px",
+    height: "400px",
     backgroundColor: "#ea9b0a",
     width: "100%",
     position: "absolute",
-    bottom: "0px",
+    bottom: "5px",
     top: "190px",
     right: "auto",
     left: "auto",
-    padding: "20px"
+    padding: "5px"
 }
 
 
@@ -73,10 +76,10 @@ export const MobileLandingSection = () => {
                 <p className="mobile-image-text6">my nibh euismod tincidunt ut laoreet</p>
 
                 <div style={form}>
-                    <h1 style={{ fontWeight: "bold", textAlign: "center", fontSize: "40px" }}>{t('check_my_case')}</h1>
-                    <p style={{ textAlign: "center", fontSize: "20px", color: "black" }}>{t('please_text')}</p>
-                    <input type="text" id="cnum" name="casenumber" placeholder={t('case_number')} style={{ marginBottom: "20px", width: "100%", padding: "23px", backgroundColor: "#dbd6d6" }} />
-                    <input type="password" id="pass" name="password" placeholder={t('password')} style={{ borderColor: "#dbd6d6", marginBottom: "20px", width: "100%", padding: "23px", backgroundColor: "#dbd6d6" }} />
+                    <h1 style={{ fontWeight: "bold", textAlign: "center", fontSize: "26px" }}>{t('check_my_case')}</h1>
+                    <p style={{ textAlign: "center", fontSize: "16px", color: "black" }}>{t('please_text')}</p>
+                    <input type="text" id="cnum" name="casenumber" placeholder={t('case_number')} style={{ marginBottom: "10px", width: "100%", padding: "15px", backgroundColor: "#dbd6d6" }} />
+                    <input type="password" id="pass" name="password" placeholder={t('password')} style={{ borderColor: "#dbd6d6", marginBottom: "10px", width: "100%", padding: "15px", backgroundColor: "#dbd6d6" }} />
                     <div style={{ textAlign: "center" }}>
                         <button style={{ cursor: "pointer", boxShadow: "none", fontWeight: "bold", backgroundColor: "black", color: "white", borderColor: "black", paddingTop: "15px", paddingBottom: "15px", paddingLeft: "30px", paddingRight: "30px" }}>
                             {t('view_case')}
@@ -93,7 +96,7 @@ export const MobileLandingSection = () => {
                                     type="submit"
                                     variant="contained"
                                     color="primary"
-                                    style={{ marginRight: 10 }}
+                                    style={{ marginRight: 10}}
                                 >
                                     Send Request
                                 </Button>,
@@ -148,18 +151,18 @@ export const MobileLandingSection = () => {
                     </div>
                 </div>
             </div>
-            <div style={row2}>
-                <h1 style={{ fontWeight: "bold", fontSize: "45px" }}>{t('how_to_use')}</h1>
-                <p style={{ color: "black", fontSize: "17px" }}>{t('dear_text')}</p>
-                <p style={{ color: "black", fontSize: "17px" }}>{t('first_paragraph')}</p>
-                <p style={{ color: "black", fontSize: "17px" }}>{t('second_paragraph')}</p>
-                <p style={{ color: "black", fontSize: "17px" }}>{t('third_paragraph')}</p>
-                <p style={{ color: "black", fontSize: "17px" }}>{t('fourth_paragraph')}</p>
+            <div style={row2} className='guider-div'>
+                <h1 style={{ fontWeight: "bold", fontSize: "18px" }}>{t('how_to_use')}</h1>
+                <p style={{ color: "black", fontSize: "3vmin" }}>{t('dear_text')}</p>
+                <p style={{ color: "black", fontSize: "3vmin" }}>{t('first_paragraph')}</p>
+                <p style={{ color: "black", fontSize: "3vmin" }}>{t('second_paragraph')}</p>
+                <p style={{ color: "black", fontSize: "3vmin" }}>{t('third_paragraph')}</p>
+                <p style={{ color: "black", fontSize: "3vmin" }}>{t('fourth_paragraph')}</p>
             </div>
 
             <Row style={row3} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col span={24} style={{ backgroundColor: "#353582", padding: "50px" }}>
-                    <h1 style={{ color: "white", fontWeight: "bold", fontSize: "45px", textAlign: "center" }}>Notice</h1>
+                    <h1 style={{ color: "white", fontWeight: "bold", fontSize: "26px", textAlign: "center" }}>Notice</h1>
                     <p style={{ color: "white", fontSize: "15px", margin: "10px" }}>The U.S. Government and RSC Africa, operated by CWS, are dedicated to ensuring the safety
                         and security of refugee applicants and our staff around the world who support the U.S. Refugee
                         Admissions Program (USRAP). For the latest information regarding COVID-19 and how to best

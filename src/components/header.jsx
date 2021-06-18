@@ -132,9 +132,9 @@ export const HeaderSection = () => {
                 <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{ padding: "80px", textAlign: "center" }}>
                     <Col span={4}>
                         <h2 className="nav-link">
-                            <Dropdown overlay={myCaseMenu}>
-                                <h4 className="nav-link">Check my Case</h4>
-                            </Dropdown>
+                            
+                                <h4 className="nav-link"><Link to ='/status' className="nav-link" >Check my Case</Link></h4>
+                            
                         </h2>
                     </Col>
                     <Col span={4}>

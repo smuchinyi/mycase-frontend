@@ -54,3 +54,12 @@
     left: 20px;
 }
 
+@media screen and(max-widh:567px){
+    .guider-div{
+        margin-top: 100px;
+        position: absolute;
+        
+    }
+    
+}
+

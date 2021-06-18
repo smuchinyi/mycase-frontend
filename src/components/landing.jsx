@@ -33,8 +33,8 @@ const form = {
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
-    top: "350px",
-    right: "40px",
+    top: "320px",
+    right: "30px",
     padding: "20px",
     marginTop: '100px'
 }
@@ -151,7 +151,7 @@ export const LandingSection = () => {
                 </div>
             </div>
             <div style={row2}>
-                <h1 style={{ fontWeight: "bold", fontSize: "45px" }}>{t('how_to_use')}</h1>
+                <h1 style={{ fontWeight: "bold", fontSize: "24px" }}>{t('how_to_use')}</h1>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('dear_text')}</p>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('first_paragraph')}</p>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('second_paragraph')}</p>
