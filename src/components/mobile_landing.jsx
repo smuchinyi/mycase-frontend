@@ -13,23 +13,24 @@ import Button from '@material-ui/core/Button';
 
 const row1 = {
     position: "relative",
-    textAlign:'center'
+    textAlign: 'center',
+    height: "300px"
 }
 
 const row2 = {
     baackgroundColor: "white",
     padding: "50px",
-    marginTop: "0px",
-    scrollX:'auto',
+    marginTop: "250px",
+    scrollX: 'auto',
     fontSize: '1.2vmin'
-    
+
 }
 
 const row3 = {
 }
 
 const form = {
-    height: "400px",
+    height: "410px",
     backgroundColor: "#ea9b0a",
     width: "100%",
     position: "absolute",
@@ -66,7 +67,7 @@ export const MobileLandingSection = () => {
     return (
         <>
             <div style={row1}>
-                <img src={child} width="100%" className="bg-image" />
+                <img src={child} width="100%" height="300px" className="bg-image" />
                 <h1 className="mobile-image-text1">MyCase</h1>
                 <h1 className="mobile-image-text2">US Refugee Admissions</h1>
                 <h1 className="mobile-image-text3">Program</h1>
@@ -84,8 +85,8 @@ export const MobileLandingSection = () => {
                         <button style={{ cursor: "pointer", boxShadow: "none", fontWeight: "bold", backgroundColor: "black", color: "white", borderColor: "black", paddingTop: "15px", paddingBottom: "15px", paddingLeft: "30px", paddingRight: "30px" }}>
                             {t('view_case')}
                         </button>
-                        <p style={{ marginTop: 10 }}>Don't remember your password?</p>
-                        <p style={{ color: "#3f51b5", fontWeight: "bold", cursor: "pointer" }} onClick={showModal}>Request Password Change</p>
+                        <p style={{ marginTop: 10 }}>{t('dont_remember')}</p>
+                        <p style={{ color: "#3f51b5", fontWeight: "bold", cursor: "pointer" }} onClick={showModal}>{t('request_password')}</p>
                         <Modal
                             title={<span style={{ fontWeight: "bold" }}>Password Change Request</span>}
                             visible={isModalVisible}
@@ -96,7 +97,7 @@ export const MobileLandingSection = () => {
                                     type="submit"
                                     variant="contained"
                                     color="primary"
-                                    style={{ marginRight: 10}}
+                                    style={{ marginRight: 10 }}
                                 >
                                     Send Request
                                 </Button>,
@@ -151,7 +152,7 @@ export const MobileLandingSection = () => {
                     </div>
                 </div>
             </div>
-            <div style={row2} className='guider-div'>
+            <div style={row2}>
                 <h1 style={{ fontWeight: "bold", fontSize: "18px" }}>{t('how_to_use')}</h1>
                 <p style={{ color: "black", fontSize: "3vmin" }}>{t('dear_text')}</p>
                 <p style={{ color: "black", fontSize: "3vmin" }}>{t('first_paragraph')}</p>

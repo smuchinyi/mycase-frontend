@@ -9,5 +9,7 @@
     "first_paragraph": "This is RSC Africa's My Case site which will help you look up information about your resettlement case to the United States. Use the login panel to the left to log in and receive an update of your individual case status.",
     "second_paragraph": "You should have been provided with a password by the RSC Africa caseworker that completed your first interview. If you have forgotten your password or you would like to change your existing password, please click the 'REQUEST PASSWORD CHANGE' link to the left and follow instructions.",
     "third_paragraph": "If you have additional questions about your individual case, RSC Africa, or the United States Refugee Admissions Program, you may write to Case@CWSAfrica.org. RSC Africa will attempt to respond to your question within 14 calendar days.",
-    "fourth_paragraph": "The USRAP is free of charge. Report any solicitation of funds or suspected fraud to Fraud@CWSAfrica.org"
+    "fourth_paragraph": "The USRAP is free of charge. Report any solicitation of funds or suspected fraud to Fraud@CWSAfrica.org",
+    "dont_remember": "Don't remember your password?",
+    "request_password": "Request Password Change"
 }

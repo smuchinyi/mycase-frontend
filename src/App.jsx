@@ -11,6 +11,8 @@ import { NotFound } from './pages/NotFound.jsx';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { MobileFooterSection } from './components/mobile_footer';
+import { MediumHeaderSection } from './components/medium_screen'
+
 
 
 
@@ -18,11 +20,13 @@ import { MobileFooterSection } from './components/mobile_footer';
 function App() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('sm'));
+  const matches_medium = useMediaQuery(theme.breakpoints.up('sm'))
+  const matches_large = useMediaQuery(theme.breakpoints.down('md'))
   return (
     <BrowserRouter>
       <div className="App">
         {
-          matches ? <MobileHeaderSection /> : <HeaderSection />
+          matches ? <MobileHeaderSection /> : matches_medium && matches_large ? <MediumHeaderSection /> : <HeaderSection />
         }
         <Switch>
           <Route exact path='/' component={Home} />

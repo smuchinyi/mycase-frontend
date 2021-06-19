@@ -20,7 +20,7 @@ const row2 = {
     height: "500px",
     baackgroundColor: "white",
     padding: "50px",
-    marginTop: '100px'
+    marginTop: '110px'
 }
 
 const row3 = {
@@ -28,8 +28,8 @@ const row3 = {
 }
 
 const form = {
-    height: "500px",
-    width: "500px",
+    height: "525px",
+    width: "510px",
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
@@ -83,8 +83,8 @@ export const LandingSection = () => {
                         <button style={{ cursor: "pointer", boxShadow: "none", fontWeight: "bold", backgroundColor: "black", color: "white", borderColor: "black", paddingTop: "15px", paddingBottom: "15px", paddingLeft: "30px", paddingRight: "30px" }}>
                             {t('view_case')}
                         </button>
-                        <p style={{ marginTop: 10 }}>Don't remember your password?</p>
-                        <p style={{ color: "#3f51b5", fontWeight: "bold", cursor: "pointer" }} onClick={showModal}>Request Password Change</p>
+                        <p style={{ marginTop: 10 }}>{t('dont_remember')}</p>
+                        <p style={{ color: "#3f51b5", fontWeight: "bold", cursor: "pointer" }} onClick={showModal}>{t('request_password')}</p>
                         <Modal
                             title={<span style={{ fontWeight: "bold" }}>Password Change Request</span>}
                             visible={isModalVisible}
