@@ -9,6 +9,7 @@ import { NotFound } from './pages/NotFound.jsx';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { RefugeeResources } from './components/refugee_resources';
+import { ContactUs } from './pages/contacts';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route exact path='/status' component={Case} />
           <Route exact path='/gallery' component={Gallery} />
           <Route exact path='/refugee-resources' component={RefugeeResources} />
+          <Route exact path='/contact-us' component={ContactUs} />
           <Route component={NotFound} />
         </Switch>
         <FooterSection />

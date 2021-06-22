@@ -287,7 +287,7 @@ export const HeaderSection = () => {
                         <h2 className="nav-link"><Link to='/gallery' className="nav-link" onClick={fetchData}>Gallery</Link></h2>
                     </Col>
                     <Col span={4}>
-                        <h2 className="nav-link">Contact Us</h2>
+                        <h2 className="nav-link"><Link to='/contact-us' className="nav-link">Contact Us</Link></h2>
                     </Col>
                     <Col span={4}>
                         <h2>
