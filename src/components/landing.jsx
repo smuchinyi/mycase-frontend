@@ -142,9 +142,9 @@ export const LandingSection = () => {
                     <h1 className="mobile-image-text2">US Refugee Admissions</h1>
                     <h1 className="mobile-image-text3">Program</h1>
 
-                    <p className="mobile-image-text4">RSC is operated by CWS as part of a cooperative</p>
-                    <p className="mobile-image-text5"> agreement with the US Department of state</p>
-                    {/* <p className="image-text6">the US Department of state</p> */}
+                    <p className="mobile-image-text4">RSC is operated by CWS as part</p>
+                    <p className="mobile-image-text5">of a cooperative agreement</p>
+                    <p className="mobile-image-text6">with the US Department of state</p>
 
                     <div style={form_mobile}>
                         <h1 style={{ fontWeight: "bold", textAlign: "center", fontSize: "26px" }}>{t('check_my_case')}</h1>
