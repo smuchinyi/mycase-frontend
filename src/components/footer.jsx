@@ -5,6 +5,8 @@ import Typography from '@material-ui/core/Typography';
 import cws from '../images/ws.png'
 import footer from '../images/footer4.png'
 import './footer.css';
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 
 const main = {
@@ -26,14 +28,98 @@ const content = (
 
 
 const logo = {
-    height: 50,
-    with: 40
+    height: 40,
+    width: 100
+}
+
+const logo2 = {
+    height: 40,
+    width: 80
+}
+
+const logo_mobile = {
+    height: 30,
+    width: 80
 }
 
 
-
-
 export const FooterSection = () => {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.down('sm'));
+
+
+    // Conditional Rendering for mobile screen, medium screen and large screen
+
+    //Render mobile screen
+    if (matches) {
+        return (
+            <>
+                <div style={main}>
+                    <div className='mobileFraudSection'>
+                        <img src={footer} width="100%" height="355px" className="fraud-image" />
+                        <p id='mobile-title'>Fraud Reporting</p>
+                        <p className="mobile-fraud-text">USRAP remains free of charge and applicants should not engage with anyone who is asking you to pay or
+                            provide services for information or a change in status on your case.<br />
+                            Please report any instances of fraud or abuse to the RSC’s confidential email box at<br /><br />
+                            <span style={{ fontWeight: "bold", fontStyle: "italic" }}>fraud@CWSAfrica.org</span>
+                        </p>
+
+                    </div>
+                    <div className='mobile-operation'><span>This website was
+                        funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended.
+                        The opinions, findings, and conclusions stated herein are those of the author and do not necessarily reflect those of the United
+                        States Department of State.</span></div>
+                    <div className='core-logo'>
+                        <div>
+                            <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                                <img src='images/CWS-12.png' style={logo2} />
+                            </Popover></div>
+                    </div>
+                    <div className='wcs-logo'>
+                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                            <img src={cws} style={logo_mobile} />
+                        </Popover>
+                    </div>
+                    <div className='mobile-footer-last'>
+                        <div>
+
+                            <div className='footer-contacts'>
+                                <span className='contact-title'>
+                                    RSC CONTACT INFORMATION:
+                                </span>
+                                <p className='contact-info'>
+                                    P.O. Box 14176-00800,<br />
+                                    Nairobi, Kenya<br />
+                                    Email: case@CWSAfrica.org
+                                </p></div>
+
+                        </div>
+                        <div>
+
+                            <div className='site-map'>
+                                <span className='site-title'>
+                                    SITEMAP
+                                </span>
+                                <p className="siteMap">
+                                    Check my Case<br />
+                                    Gallery<br />
+                                    Refugee Resources<br />
+                                    Public Resources<br />
+                                    Contact Us<br />
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </>
+        )
+    }
+
+    //Otherwise render this for medium and large screen
     return (
         <>
             <div style={main}>
@@ -47,7 +133,7 @@ export const FooterSection = () => {
                     </p>
 
                 </div>
-                <div className='operation'><span>RSC Africa is operated by CWS as part of a cooperative agreement with the United States Department of State. This website was
+                <div className='operation'><span>This website was
                     funded by the United States Department of State under the authority of the Migration and Assistance Act of 1962, as amended.
                     The opinions, findings, and conclusions stated herein are those of the author and do not necessarily reflect those of the United
                     States Department of State.</span></div>
@@ -78,7 +164,7 @@ export const FooterSection = () => {
                     </div>
                     <div>
                         <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
-                            <img src='images/CWS-12.png' style={logo} />
+                            <img src='images/CWS-12.png' style={logo2} />
                         </Popover></div>
                     <div>
                         <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>

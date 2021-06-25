@@ -1,44 +1,32 @@
 import './App.css';
 import { Home } from './pages/home.jsx';
 import { Case } from './pages/caseStatus.jsx';
-import { MobileCase } from './pages/mobileCaseStatus.jsx';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { FooterSection } from './components/footer.jsx';
 import { HeaderSection } from './components/header.jsx';
-import { MobileHeaderSection } from './components/mobile_header.jsx';
 import { Gallery } from './pages/gallery2.jsx';
 import { NotFound } from './pages/NotFound.jsx';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { MobileFooterSection } from './components/mobile_footer';
-import { MediumHeaderSection } from './components/medium_screen'
-
-
-
+import { RefugeeResources } from './components/refugee_resources';
 
 
 function App() {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('sm'));
-  const matches_medium = useMediaQuery(theme.breakpoints.up('sm'))
-  const matches_large = useMediaQuery(theme.breakpoints.down('md'))
   return (
     <BrowserRouter>
       <div className="App">
-        {
-          matches ? <MobileHeaderSection /> : matches_medium && matches_large ? <MediumHeaderSection /> : <HeaderSection />
-        }
+        <HeaderSection />
         <Switch>
           <Route exact path='/' component={Home} />
-          {
-            matches ? <Route exact path='/status' component={MobileCase} /> : <Route exact path='/status' component={Case} />
-          }
+          <Route exact path='/status' component={Case} />
           <Route exact path='/gallery' component={Gallery} />
+          <Route exact path='/refugee-resources' component={RefugeeResources} />
           <Route component={NotFound} />
         </Switch>
-        {
-          matches ? <MobileFooterSection /> : <FooterSection />
-        }
+        <FooterSection />
+
       </div>
     </BrowserRouter>
   );

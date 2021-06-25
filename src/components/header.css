@@ -1,8 +1,20 @@
 .nav-link{
     cursor: pointer;
+    font-size: 17px;
     color: rgb(73,70,71);
 }
 
 .nav-link:hover,.nav-link:active,.menu-item,.menu-item:hover{
+    color: green
+}
+
+.nav-link-med{
+    cursor: pointer;
+    color: rgb(73,70,71);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.nav-link-med:hover,.nav-link-med:active,.menu-item,.menu-item:hover{
     color: green
 }

@@ -1,0 +1,66 @@
+.fr-title{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.fr-image{
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    position: relative;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.pdf-res-titles{
+    font-size: 20px;
+}
+
+.fr-pub-res{
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    color: white;
+    font-size: 45px;
+}
+
+.pdf-res-image{
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+}
+
+.ft-title-right{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 145px;
+}
+
+.ft-title-right-medium{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 150px;
+}
+
+.fr-pub-res-mobile{
+    position: absolute;
+    top: 150px;
+    left: 40px;
+    color: white;
+    font-size: 25px;
+}
+
+.ft-title-right-mobile{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 50px;
+}
+.fr-down-btn{
+    background-color: #ea9b0a;
+    font-weight: bold;
+}
+.fr-travel-title{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 15px;
+}

@@ -4,6 +4,12 @@
     
 }
 
+.mobile-case-status{
+    position: relative;
+    height: 550px;
+    
+}
+
 .bg-image{
     object-fit: cover;
     filter: brightness(60%);
@@ -55,6 +61,68 @@
     /* 0%;width: 6 */
 }
 
+.mobile-status{
+    position: absolute; 
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+    font-size: 26px;
+    color:black;
+    margin-bottom: 20px;
+}
+#mobile-header{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.mobile-status-display{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 300px;
+    width: 100%;
+    display: block;
+    border-radius: 1px;
+    
+}
+.mobile-status-head{
+    background-color:rgb(16,77,132) ;
+    text-align: center;
+    color:rgb(255,255,255);
+    font-family:sans-serif;
+    font-size: 15px;
+    padding: 10px;
+
+}
+.mobile-status-body{
+    /* padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 50px; */
+    padding: 6px;
+    background-color: rgb(255,255,255);
+}
+.mobile-case-info{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    /* justify-content: space-between; */
+    /* 0%;width: 6 */
+}
+
+.mobile-right-value{
+    font-size: 16px;
+    color: black;
+}
+
+.mobile-label{
+    font-size: 15px;
+    font-weight: bolder;
+    display: block;
+    width: 200px;
+    margin-left: 0px;
+    text-align: justify;
+}
+
 .right-value{
     font-size: 16px;
     color: black;
@@ -78,6 +146,11 @@
     justify-content: center;
     text-align: center;
 }
+
+.mobile-account-details{
+    padding: 10px 0px 20px 50px;
+}
+
 
 .help-case{
     padding: 80px;

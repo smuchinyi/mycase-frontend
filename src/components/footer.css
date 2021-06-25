@@ -60,4 +60,50 @@
     justify-content: space-between;
  }
 
+ .mobile-footer-last{
+   display: flex;
+   flex-direction: row;
+   color:rgb(255,255,255);
+   font-family:sans-serif;
+   font-size:13px;
+   padding: 8px;
+   justify-content: space-between;
+}
+
+
+#mobile-title{
+   font-size:26px;
+   font-weight: bolder;
+   color: white;
+   position:absolute;
+   text-align: center;
+   top: 40px;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.mobile-fraud-text{
+  color: white;
+  position:absolute;
+  top: 180px;
+  font-size: 13px;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
+
+
+.mobile-operation{
+   width:100%;
+   color:rgb(255,255,255);
+   font-family:sans-serif;
+   font-size: small;
+   padding: 20px;
+}
+
+
+.mobileFraudSection{
+  position: relative;
+  height: 355px;
+}
  
