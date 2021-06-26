@@ -17,9 +17,10 @@
 .image-text2{
     color:white;
     position:absolute;
-    top: 85px;
-    font-size: 40px;
-    font-weight: bold;
+    top: 80px;
+    font-size: 52px;
+    font-weight: bolder;
+    font-family: Lato Heavy;
     left:50%;
     
 }
@@ -28,10 +29,10 @@
     color:white;
     position:absolute;
     top: 135px;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 52px;
+    font-weight: bolder;
     left:50%;
-    font-family: Lato;
+    font-family: Lato Heavy;
 }
 
 .image-text4{
