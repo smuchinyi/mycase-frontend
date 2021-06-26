@@ -16,14 +16,14 @@ const main = {
 
 const core_content = (
     <div style={{ textAlign: "center" }}>
-        <p>Click <a target='_blank' href='https://coresourceexchange.org/'>here</a> to access additional resources on<br/> the U.S. Refugee Admissions Program</p>
+        <p>Click <a target='_blank' href='https://coresourceexchange.org/'>here</a> to access additional resources on<br /> the U.S. Refugee Admissions Program</p>
 
     </div>
 );
 
 const cws_content = (
     <div style={{ textAlign: "center" }}>
-        <p>Click <a target='_blank' href='https://cwsglobal.org/our-work/africa/'>here</a>to know more about Church World Service<br/> and their work around the globe.</p>
+        <p>Click <a target='_blank' href='https://cwsglobal.org/our-work/africa/'>here</a>to know more about Church World Service<br /> and their work around the globe.</p>
 
     </div>
 );
@@ -34,9 +34,20 @@ const logo = {
     width: 350
 }
 
+const logoMobile = {
+    height: 60,
+    width: 330
+}
+
 const logo2 = {
     height: 80,
-    width: 150
+    width: 280
+}
+
+const logo2Mobile = {
+    height: 60,
+    width: 260,
+    margin: 10
 }
 
 const logo_mobile = {
@@ -74,12 +85,12 @@ export const FooterSection = () => {
                     <div className='core-logo'>
                         <div>
                             <Popover content={core_content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
-                                <img src='images/CWS-12.png' style={logo2} />
+                                <img src='images/flogos-CORE.png' style={logo2Mobile} />
                             </Popover></div>
                     </div>
                     <div className='wcs-logo'>
                         <Popover content={cws_content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
-                            <img src={cws} style={logo_mobile} />
+                            <img src='images/flogos-CWS.png' style={logoMobile} />
                         </Popover>
                     </div>
                     <div className='mobile-footer-last'>
@@ -87,7 +98,7 @@ export const FooterSection = () => {
 
                             <div className='footer-contacts'>
                                 <span className='contact-title'>
-                                    RSC Africa CONTACT INFORMATION:
+                                    RSC AFRICA CONTACT INFORMATION:
                                 </span>
                                 <p className='contact-info'>
                                     P.O. Box 14176-00800,<br />
@@ -143,7 +154,7 @@ export const FooterSection = () => {
                 <div className='footer-last'>
                     <div>
                         <span className='contact-title'>
-                            RSC Africa CONTACT INFORMATION:
+                            RSC AFRICA CONTACT INFORMATION:
                         </span>
                         <p className='contact-info'>
                             P.O. Box 14176-00800,<br />
