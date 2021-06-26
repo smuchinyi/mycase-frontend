@@ -9,7 +9,8 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 export const Case = () => {
-
+    
+    const[userDetails,setUserDetails] = useState('');
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -138,7 +139,7 @@ export const Case = () => {
                         3.Check your case status at: <b>mycase.rscafrica.org</b><br />
                     </p>
                 </div>
-
+               {userDetails?(
                 <div className="mobile-account-details">
                     <form name="caseForm">
                         <div className='details-title'>
@@ -181,7 +182,7 @@ export const Case = () => {
 
                         </div>
                     </form>
-                </div>
+                </div>):('')}
             </>
         )
 
@@ -217,14 +218,14 @@ export const Case = () => {
                 <div id='help-title'><span >How Can I Help MyCase</span></div>
                 <Row>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-08.png' width="50%" />
+                        <img src='images/CWS-08.png' width="50%" height="300px" />
                         <span id='info-title'>Always Tell the Truth</span>
                         <p>
                             Knowingly providing false information can affect
                             your eligibility for resettlement to the United States.</p>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-09.png' width="50%" />
+                        <img src='images/CWS-09.png' width="50%" height="300px"/>
                         <span id='info-title'>Come to All Your Appointments</span>
                         <p>
                             Please come to all your RSC Africa scheduled
@@ -232,7 +233,7 @@ export const Case = () => {
                             orientation sessions.</p>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-07.png' width="50%" />
+                        <img src='images/CWS-07.png' width="50%" height="315px" />
                         <span id='info-title'>Bring All Important Documents to Interviews</span>
                         <p>
                             Make sure to have all important documents ready at each
@@ -243,13 +244,13 @@ export const Case = () => {
                 </Row>
                 <Row>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-11.png' width="50%" />
+                        <img src='images/CWS-11.png' width="50%" height="300px" />
                         <span id='info-title'>Inform Us of Any Changes to Your Family</span>
                         <p>Tell RSC Africa about any marriages, deaths or births that
                             have happened for members on your case.</p>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-10.png' width="50%" />
+                        <img src='images/CWS-10.png' width="50%" height="345px" />
                         <span id='info-title'>Provide All of Your Contact Information</span>
                         <p>
                             Tell RSC Africa all your contact information at your first
@@ -259,7 +260,7 @@ export const Case = () => {
                         </p>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-06.png' width="50%" />
+                        <img src='images/CWS-06.png' width="50%" height="300px" />
                         <span id='info-title'>Inform Us if You Move</span>
                         <p>
                             Tell RSC Africa about any changes to your current
@@ -281,7 +282,7 @@ export const Case = () => {
                 </p>
             </div>
 
-            <div className="account-details">
+            {userDetails?(<div className="account-details">
                 <form name="caseForm">
                     <div className='details-title'>
                         <span>Account Details</span>
@@ -323,7 +324,7 @@ export const Case = () => {
 
                     </div>
                 </form>
-            </div>
+            </div>):('')}
         </>
     )
 }

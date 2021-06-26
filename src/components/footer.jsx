@@ -23,7 +23,7 @@ const core_content = (
 
 const cws_content = (
     <div style={{ textAlign: "center" }}>
-        <p>Click <a target='_blank' href='https://cwsafrica.org'>here</a>to know more about Church World Service<br/> and their work around the globe.</p>
+        <p>Click <a target='_blank' href='https://cwsglobal.org/our-work/africa/'>here</a>to know more about Church World Service<br/> and their work around the globe.</p>
 
     </div>
 );
@@ -31,17 +31,17 @@ const cws_content = (
 
 const logo = {
     height: 80,
-    width: 200
+    width: 300
 }
 
 const logo2 = {
     height: 80,
-    width: 200
+    width: 300
 }
 
 const logo_mobile = {
-    height: 40,
-    width: 150
+    height: 100,
+    width: 300
 }
 
 
@@ -166,11 +166,11 @@ export const FooterSection = () => {
                     </div>
                     <div>
                         <Popover content={core_content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
-                            <img src='images/CWS-12.png' style={logo2} />
+                            <img src='images/flogos-CORE.png' style={logo2} />
                         </Popover></div>
                     <div>
                         <Popover content={cws_content} title="CWS" placement="right" style={{ backgroundColor: "black" }}>
-                            <img src={cws} style={logo} />
+                            <img src='images/flogos-CWS.png' style={logo} />
                         </Popover></div>
                 </div>
 

@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import child from '../images/child-fl4.png'
 import footer from '../images/footer.png'
 import "./landing.css";
@@ -35,7 +35,7 @@ const form = {
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
-    top: "220px",
+    top: "155px",
     left: "50px",
     padding: "20px",
     marginTop: '100px'
@@ -78,14 +78,14 @@ const row1_medium = {
 }
 
 const row2_medium = {
-    height: "500px",
+    
     baackgroundColor: "white",
     padding: "50px",
     marginTop: '110px'
 }
 
 const row3_medium = {
-    height: "700px",
+    
     marginBottom: "102px"
 }
 
@@ -96,7 +96,7 @@ const form_medium = {
     position: "absolute",
     bottom: "0px",
     top: "230px",
-    left: "50px",
+    left: "10px",
     padding: "20px",
     marginTop: '100px'
 }
@@ -138,7 +138,7 @@ export const LandingSection = () => {
             <>
                 <div style={row1_mobile}>
                     <img src={child} width="100%" height="300px" className="bg-image" />
-                    <p className="mobile-image-text1">MyCase</p>
+                    <p className="mobile-image-text1">My Case</p>
                     <p className="mobile-image-text2">US Refugee Admissions</p>
                     <p className="mobile-image-text3">Program</p>
 
@@ -229,13 +229,13 @@ export const LandingSection = () => {
                     <p style={{ color: "black", fontSize: "3vmin" }}>{t('second_paragraph')}</p>
                     <p style={{ color: "black", fontSize: "3vmin" }}>{t('third_paragraph')}</p>
                     <p style={{ color: "black", fontSize: "3vmin" }}>{t('fourth_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "3vmin" }}>{t('fiveth_paragraph')}</p>
                 </div>
 
                 <Row style={row3_mobile} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                     <Col span={24} style={{ backgroundColor: "#353582", padding: "50px" }}>
                         <h1 style={{ color: "white", fontWeight: "bold", fontSize: "26px", textAlign: "center" }}>Notice</h1>
-                        <p style={{ color: "white", fontSize: "15px", margin: "10px" }}>The U.S. Government and RSC Africa, operated by CWS, are dedicated to ensuring the safety
-                            and security of refugee applicants and our staff around the world who support the U.S. Refugee
+                        <p style={{ color: "white", fontSize: "15px", margin: "10px" }}>The U.S. Government and RSC Africa, which CWS operates, are dedicated to ensuring the safety and  our staff around the world who support the U.S. Refugee
                             Admissions Program (USRAP). For the latest information regarding COVID-19 and how to best
                             protect yourself and your family, please visit the Centers for Disease Control and Prevention’s
                             (CDC) website: https://www.cdc.gov/coronavirus/2019-ncov/index.html.</p>
@@ -268,7 +268,7 @@ export const LandingSection = () => {
             <>
                 <div style={row1_medium}>
                     <img src={child} width="100%" height="700px" className="bg-image" />
-                    <h1 className="image-text1">MyCase</h1>
+                    <h1 className="image-text1">My Case</h1>
                     <h1 className="image-text2">US Refugee Admissions</h1>
                     <h1 className="image-text3">Program</h1>
 
@@ -354,28 +354,28 @@ export const LandingSection = () => {
                 </div>
                 <div style={row2_medium}>
                     <h1 style={{ fontWeight: "bold", fontSize: "24px" }}>{t('how_to_use')}</h1>
-                    <p style={{ color: "black", fontSize: "17px" }}>{t('dear_text')}</p>
-                    <p style={{ color: "black", fontSize: "17px" }}>{t('first_paragraph')}</p>
-                    <p style={{ color: "black", fontSize: "17px" }}>{t('second_paragraph')}</p>
-                    <p style={{ color: "black", fontSize: "17px" }}>{t('third_paragraph')}</p>
-                    <p style={{ color: "black", fontSize: "17px" }}>{t('fourth_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "20px" }}>{t('dear_text')}</p>
+                    <p style={{ color: "black", fontSize: "20px" }}>{t('first_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "20px" }}>{t('second_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "20px" }}>{t('third_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "20px" }}>{t('fourth_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "20px" }}>{t('fiveth_paragraph')}</p>
                 </div>
 
                 <Row style={row3_medium} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                     <Col span={16} style={{ backgroundColor: "#353582", padding: "50px", textAlign: "center" }}>
-                        <h1 style={{ color: "white", fontWeight: "bold", fontSize: "45px" }}>Notice</h1>
-                        <p style={{ color: "white", fontSize: "18px" }}>The U.S. Government and RSC Africa, operated by CWS, are dedicated to ensuring the safety
-                            and security of refugee applicants and our staff around the world who support the U.S. Refugee
+                        <h1 style={{ color: "white", fontWeight: "bold", fontSize: "40px" }}>Notice</h1>
+                        <p style={{ color: "white", fontSize: "20px" }}>The U.S. Government and RSC Africa, which CWS operates, are dedicated to ensuring the safety and our staff around the world who support the U.S. Refugee
                             Admissions Program (USRAP). For the latest information regarding COVID-19 and how to best
                             protect yourself and your family, please visit the Centers for Disease Control and Prevention’s
                             (CDC) website: https://www.cdc.gov/coronavirus/2019-ncov/index.html.</p>
-                        <p style={{ color: "white", fontSize: "18px" }}>RSC Africa continues to process cases for departure that conform to the FY 2021 Presidential
+                        <p style={{ color: "white", fontSize: "20px" }}>RSC Africa continues to process cases for departure that conform to the FY 2021 Presidential
                             Determination (PD) on Refugee Admissions. Cases that do not fall under one of the categories
                             in the PD will not be able to depart to the United States at this time. These cases will remain
                             open and the RSC will reach out to the applicant if there is any action needed on the case.
                             Given the changes to the USRAP program categories this fiscal year, we urge applicants to
                             remain patient.</p>
-                        <p style={{ color: "white", fontSize: "18px" }}>The RSC is continuing to operate at reduced levels, and has temporarily postponed in-person
+                        <p style={{ color: "white", fontSize: "20px" }}>The RSC is continuing to operate at reduced levels, and has temporarily postponed in-person
                             processing and appointments (if applicable) for the safety of staff and refugee clients. Please
                             check our website at mycase.rscafrica.org for general updates on USRAP processing and RSC
                             operations. As updates for your specific case become available, we will inform you. In the
@@ -398,7 +398,7 @@ export const LandingSection = () => {
         <>
             <div style={row1}>
                 <img src={child} width="100%" height="700px" className="bg-image" />
-                <p className="image-text1">MyCase</p>
+                <p className="image-text1">My Case</p>
                 <p className="image-text2">US Refugee Admissions</p>
                 <p className="image-text3">Program</p>
 
@@ -489,13 +489,13 @@ export const LandingSection = () => {
                 <p style={{ color: "black", fontSize: "17px" }}>{t('second_paragraph')}</p>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('third_paragraph')}</p>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('fourth_paragraph')}</p>
+                <p style={{ color: "black", fontSize: "17px" }}>{t('fiveth_paragraph')}</p>
             </div>
 
             <Row style={row3} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col span={16} style={{ backgroundColor: "#353582", padding: "50px", textAlign: "center" }}>
                     <h1 style={{ color: "white", fontWeight: "bold", fontSize: "40px" }}>Notice</h1>
-                    <p style={{ color: "white", fontSize: "18px" }}>The U.S. Government and RSC Africa, operated by CWS, are dedicated to ensuring the safety
-                        and security of refugee applicants and our staff around the world who support the U.S. Refugee
+                    <p style={{ color: "white", fontSize: "18px" }}>The U.S. Government and RSC Africa, which CWS operates, are dedicated to ensuring the safety and  our staff around the world who support the U.S. Refugee
                         Admissions Program (USRAP). For the latest information regarding COVID-19 and how to best
                         protect yourself and your family, please visit the Centers for Disease Control and Prevention’s
                         (CDC) website: https://www.cdc.gov/coronavirus/2019-ncov/index.html.</p>
