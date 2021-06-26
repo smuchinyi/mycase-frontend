@@ -1,0 +1,136 @@
+
+.important-messages-section{
+    padding: 15px;
+}
+#message-text-title{
+    font-weight: bold;
+    
+}
+.view-all-button{
+    color: white;
+    background-color: rgb(35,31,32);
+    border: none;
+    border-color: transparent;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+
+}
+/* large screen */
+
+@media(min-width:768px){    
+
+
+.messages-div{
+    display: flex;
+    flex-direction: row;
+}
+
+.card{
+    border-radius:2px;
+    border-color: #B6B6B5;
+    width: 400px;
+    margin-right: 18px;
+    height: 450px;
+    
+}
+.card-title{
+    font-weight: bolder;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    max-height: 120px;
+    overflow: hidden;
+}
+.card-date{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-body{
+    width: 100%;
+    display: block;
+    max-height: 180px;
+    overflow: hidden;
+
+}
+
+.read-more-button{
+     background-color: rgb(223,143,47);
+    border: none;
+    border-color: transparent;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.view-more-div{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+}
+
+/* small screens */
+@media(max-width:766px) {
+    
+    #message-text-title{
+    font-weight: bold;
+    text-align: center;
+    font-size: 26px;
+    
+}
+
+    .messages-div{
+    display: flex;
+    flex-direction: column;
+    padding:0px 50px 0px 50px;
+    overflow: hidden;
+}
+
+.card{
+    border-radius:2px;
+    border-color: #B6B6B5;
+    width: 100%;
+    margin-bottom: 15px;
+    height: 450px;
+    
+}
+.card-title{
+    font-weight: bolder;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    max-height: 120px;
+    overflow: hidden;
+}
+.card-date{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card-body{
+    width: 100%;
+    display: block;
+    max-height: 180px;
+    overflow: hidden;
+
+}
+
+.read-more-button{
+     background-color: rgb(223,143,47);
+    border: none;
+    border-color: transparent;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.view-more-div{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+    
+}

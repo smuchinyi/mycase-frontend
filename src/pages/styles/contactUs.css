@@ -1,85 +1,113 @@
 /* large screens */
-@media(min-width:960px){
+@media(min-width:960px)
+{
+    .contact-us-main-container{
+    position: relative;
+    background-image: url('/src/images/child-fl4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 900px;
+    padding: 80px 100px 80px 120px ;
+    object-fit: cover;
+    background-position: 0 -240px;
+    height: fit-content;
+    
+   
+    
+    
+}
+ 
+
     .contact-us-container{
-    padding: 80px 200px 20px 100px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding:0.05px;
-    margin-top: 15px;
+    background-color: #FFFFFF;
+    height: 450px;
+    opacity: 0.9;  
+    
+}
+
+
+.bg-image{
+    object-fit: cover;
+    filter: brightness(60%);
 }
 .form-div{
     
     width: 100%;
-    position: relative;
+    /* position: absolute; 
+    top: 60px; */
     display: flex;
     justify-content: center;
+    padding: 50px;
+    
+   
+    
     
 }
 form{
     justify-content:center ;
    
 }
-.form-column{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
+
+#contact-input,#contact-input:focus{
+    background-color:#939598;
+    width: 450px;
+    border-radius: 0px;
+    border: none;
+    border-color: transparent;
+    padding: 5px;
+    font-weight: bolder;
+    font-size: small;
+
 }
 #select,#select:focus{
-    background-color:#E6E7E9;
-    color: black;
-    font-weight: bold;
+    background-color:#939598;
     width: 450px;
     border-radius: 0px;
     border: none;
     border-color: transparent;
     height: 30px;
     padding: 5px;
+    font-weight: bolder;
+    font-size: small;
 }
 
 
 #text-area,#text-area:focus{
-    background-color:#E6E7E9;
-    color: black;
-    font-weight: bold;
+    background-color:#939598;
     width: 450px;
     border-radius: 0px;
     border: none;
     border-color: transparent;
     height: 150px;
     padding:5px;
+    font-weight: bolder;
+    font-size: small;
+    
 }
 
-#col-input,#col-input:focus{
-    background-color:#E6E7E9;
-    font-weight: bold;
-    border-radius: 0px;
-    border: none;
-    border-color: transparent;
-    padding: 5px;
-    width:200px;
 
-   
-}
 #button{
-    background-color: #939598;
+    background-color: rgb(223,143,47);
     border: none;
     border-color: transparent;
     height: 40px;
-    width: 80px;
+    width: 100px;
     cursor: pointer;
 
 }
 .contact-us-div{
-    position: relative;
-    width: 70%;
-    height: 330px;
-    background-color: #939598;
+    width: 680px;
+    height: 450px;
+    background-color: rgb(223,143,47);
     text-align: center;
     font-size: medium;
     padding: 40px;
-    left: 4%;
+    
+    
     
     
    
@@ -116,15 +144,9 @@ form{
     width: 100%;
    
 }
-.form-column{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
 #select,#select:focus{
-    background-color:#E6E7E9;
-    color: black;
-    font-weight: bold;
+    background-color:#939598;
     width: 100%;
     border-radius: 0px;
     border: none;
@@ -135,8 +157,7 @@ form{
 
 
 #text-area,#text-area:focus{
-    background-color:#E6E7E9;
-    color: black;
+    background-color:#939598;
     font-weight: bold;
     width: 100%;
     border-radius: 0px;
@@ -146,9 +167,8 @@ form{
     padding:5px;
 }
 
-#col-input,#col-input:focus{
-    background-color:#E6E7E9;
-    font-weight: bold;
+#contact-input,#contact-input:focus{
+    background-color:#939598;
     border-radius: 0px;
     border: none;
     border-color: transparent;
@@ -158,7 +178,7 @@ form{
    
 }
 #button{
-    background-color: #939598;
+    background-color: rgb(223,143,47);
     border: none;
     border-color: transparent;
     height: 40px;
@@ -170,10 +190,11 @@ form{
     position: relative;
     width: 100%;
     height: 150px;
-    background-color: #939598;
+    background-color: rgb(223,143,47);
     text-align: center;
     font-size: small;
     padding: 15px;
+    
     
     
    
@@ -188,3 +209,8 @@ form{
 
 
 }
+
+
+ ::-webkit-input-placeholder{
+     color:#605E5F;
+ }

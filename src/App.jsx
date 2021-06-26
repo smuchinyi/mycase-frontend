@@ -10,6 +10,8 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { RefugeeResources } from './components/refugee_resources';
 import { ContactUs } from './pages/contacts';
+import { ContactUs } from './pages/contactUs';
+import {PublicResources} from './pages/publicResources';
 
 
 function App() {
@@ -25,6 +27,7 @@ function App() {
           <Route exact path='/gallery' component={Gallery} />
           <Route exact path='/refugee-resources' component={RefugeeResources} />
           <Route exact path='/contact-us' component={ContactUs} />
+          <Route exact path='/public-resources' component={PublicResources} />
           <Route component={NotFound} />
         </Switch>
         <FooterSection />
