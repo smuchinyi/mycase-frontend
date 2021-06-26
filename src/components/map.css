@@ -1,0 +1,47 @@
+.map-area{
+    background-color: rgb(230,231,233);
+    padding: 40px;
+}
+.map-div{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(230,231,233);
+    padding: 40px;
+    
+   
+}
+.map-title{
+    text-align: center;
+    font-weight: bolder;
+    font-family: Lato;
+    font-size: 28px;
+}
+.map{
+    height: 450px;
+    width: 450px;
+}
+/* map styles */
+ path {
+      fill:rgb(16,77,132);
+      cursor: pointer;
+      outline: none;
+    }
+
+path:hover{
+        fill:rgb(227,140,36);
+
+}    
+
+path[id="ke"],path[id="et"],path[id="sd"],path[id="ss"],path[id="cd"],path[id="zm"]{
+        fill: rgb(227,140,36);
+      }
+
+      .map-tooltip{
+          background-color: rgb(227,140,36);
+          width: fit-content;
+          position: absolute;
+          justify-self: center;
+          display: block;
+          padding: 10px;
+          
+      }

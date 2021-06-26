@@ -20,13 +20,13 @@ export const Case = () => {
         var y = document.forms["caseForm"]["address"].value;
         var z = document.forms["caseForm"]["passport"].value;
         console.log('www', x);
-        if (x === "") {
-            return Swal.fire({
+        if (x === "") {Swal.fire({
                 title: 'Error!',
                 text: 'date of birth is required!',
                 icon: 'error',
                 confirmButtonText: 'close'
             })
+            return 
         }
         if (y === "") {
             return Swal.fire({
