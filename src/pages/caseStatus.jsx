@@ -9,8 +9,8 @@ import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 export const Case = () => {
-    
-    const[userDetails,setUserDetails] = useState('');
+
+    const [userDetails, setUserDetails] = useState('');
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
 
@@ -139,50 +139,50 @@ export const Case = () => {
                         3.Check your case status at: <b>mycase.rscafrica.org</b><br />
                     </p>
                 </div>
-               {userDetails?(
-                <div className="mobile-account-details">
-                    <form name="caseForm">
-                        <div className='details-title'>
-                            <span>Account Details</span>
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">NAME : </span> &nbsp; <span>JANE DOE</span>
+                {userDetails ? (
+                    <div className="mobile-account-details">
+                        <form name="caseForm">
+                            <div className='details-title'>
+                                <span>Account Details</span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">NAME : </span> &nbsp; <span>JANE DOE</span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">GENDER:  </span>&nbsp; <span>FEMALE</span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">GENDER:  </span>&nbsp; <span>FEMALE</span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">DATE OF BIRTH: </span>&nbsp; <span><input type="text" name="date" placeholder="Please enter your date of birth" /> </span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">DATE OF BIRTH: </span>&nbsp; <span><input type="text" name="date" placeholder="Please enter your date of birth" /> </span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">ID NO:  </span>&nbsp; <span>564273</span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">ID NO:  </span>&nbsp; <span>564273</span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">COUNTRY OF ORIGIN:</span> &nbsp;<span> KENYA </span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">COUNTRY OF ORIGIN:</span> &nbsp;<span> KENYA </span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">TELEPHONE NUMBER:</span> &nbsp;<span> +254785643</span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">TELEPHONE NUMBER:</span> &nbsp;<span> +254785643</span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">ADDRESS:  </span>&nbsp; <span><input type="text" name="address" placeholder="Please enter your address" /></span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">ADDRESS:  </span>&nbsp; <span><input type="text" name="address" placeholder="Please enter your address" /></span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label">PASSPORT PICTURE:  </span>&nbsp; <span><input type="file" name="passport" placeholder="Please upload your passport picture" /></span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label">PASSPORT PICTURE:  </span>&nbsp; <span><input type="file" name="passport" placeholder="Please upload your passport picture" /></span>
 
-                        </div>
-                        <div className='user-info'>
-                            <span className="detail-label"> </span>&nbsp; <span><input type="submit" value="submit changes" onClick={formValidator} /></span>
+                            </div>
+                            <div className='user-info'>
+                                <span className="detail-label"> </span>&nbsp; <span><input type="submit" value="submit changes" onClick={formValidator} /></span>
 
-                        </div>
-                    </form>
-                </div>):('')}
+                            </div>
+                        </form>
+                    </div>) : ('')}
             </>
         )
 
@@ -218,69 +218,69 @@ export const Case = () => {
                 <div id='help-title'><span >How Can I Help My Case</span></div>
                 <Row>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-08.png' width="50%" margin='100px' />
-                         <div className='col-itmes-div'>
-                        <span id='info-title'>Always Tell the Truth</span>
-                        <p>Knowingly providing false information can affect
-                        your eligibility for resettlement to the United States.</p></div>
-                            
+                        <img src='images/CWS-08.png' width="50%" />
+                        <div className='col-itmes-div'>
+                            <span id='info-title'>Always Tell the Truth</span>
+                            <p>Knowingly providing false information can affect
+                                your eligibility for resettlement to the United States.</p></div>
+
                     </Col>
                     <Col span={8} className="col-items">
                         <img src='images/CWS-09.png' width="50%" />
                         <div className='col-itmes-div'>
-                        <span id='info-title'>Come to All Your Appointments</span>
-                        <p>
-                            Please come to all your RSC Africa scheduled
-                            interviews, IOM medical appointments, and cultural
-                            orientation sessions.</p>
-                            </div>
+                            <span id='info-title'>Come to All Your Appointments</span>
+                            <p>
+                                Please come to all your RSC Africa scheduled
+                                interviews, IOM medical appointments, and cultural
+                                orientation sessions.</p>
+                        </div>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-07.png' width="50%"  />
+                        <img src='images/CWS-07.png' width="50%" />
                         <div className='col-itmes-div'>
-                        <span id='info-title'>Bring All Important Documents to Interviews</span>
-                        <p>
-                            Make sure to have all important documents ready at each
-                            interview, including marriage certificates, birth certificates,
-                            and any registration documents.
-                        </p>
+                            <span id='info-title'>Bring All Important Documents to Interviews</span>
+                            <p>
+                                Make sure to have all important documents ready at each
+                                interview, including marriage certificates, birth certificates,
+                                and any registration documents.
+                            </p>
                         </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col span={8} className="col-items">
 
-                        <img src='images/CWS-11.png' width="50%"  />
+                        <img src='images/CWS-11.png' width="50%" />
                         <div className='col-itmes-div'>
-                        <span id='info-title'>Inform Us of Any Changes to Your Family</span>
-                        <p>Tell RSC Africa about any marriages, deaths or births that
-                            have happened for members on your case.</p>
-                            </div>
-                    </Col>
-                    <Col span={8} className="col-items">
-                        
-                        <img src='images/CWS-10.png' width="50%"  />
-                        <div className='col-itmes-div'>
-                        <span id='info-title'>Provide All of Your Contact Information</span>
-                        <p>
-                            Tell RSC Africa all your contact information at your first
-                            interview and notify us if you change your information.
-                            Please try to keep the same contact information throughout
-                            the resettlement process.
-                        </p>
+                            <span id='info-title'>Inform Us of Any Changes to Your Family</span>
+                            <p>Tell RSC Africa about any marriages, deaths or births that
+                                have happened for members on your case.</p>
                         </div>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-06.png' width="50%"  />
+
+                        <img src='images/CWS-10.png' width="50%" />
+                        <div className='col-itmes-div'>
+                            <span id='info-title'>Provide All of Your Contact Information</span>
+                            <p>
+                                Tell RSC Africa all your contact information at your first
+                                interview and notify us if you change your information.
+                                Please try to keep the same contact information throughout
+                                the resettlement process.
+                            </p>
+                        </div>
+                    </Col>
+                    <Col span={8} className="col-items">
+                        <img src='images/CWS-06.png' width="50%" />
                         <div className='col-itmes-div'>
                             <span id='info-title'>Inform Us if You Move</span>
-                        <p>
-                            Tell RSC Africa about any changes to your current
-                            location. If you or a family member moves to a
-                            different camp or city, RSC Africa will need to know
-                            for scheduling future appointments.
-                        </p>
-                            </div>
+                            <p>
+                                Tell RSC Africa about any changes to your current
+                                location. If you or a family member moves to a
+                                different camp or city, RSC Africa will need to know
+                                for scheduling future appointments.
+                            </p>
+                        </div>
                     </Col>
                 </Row>
             </div>
@@ -295,7 +295,7 @@ export const Case = () => {
                 </p>
             </div>
 
-            {userDetails?(<div className="account-details">
+            {userDetails ? (<div className="account-details">
                 <form name="caseForm">
                     <div className='details-title'>
                         <span>Account Details</span>
@@ -337,7 +337,7 @@ export const Case = () => {
 
                     </div>
                 </form>
-            </div>):('')}
+            </div>) : ('')}
         </>
     )
 }

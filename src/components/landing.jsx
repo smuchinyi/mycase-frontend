@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import child from '../images/child-fl4.png'
 import footer from '../images/footer.png'
 import "./landing.css";
@@ -78,14 +78,14 @@ const row1_medium = {
 }
 
 const row2_medium = {
-    
+
     baackgroundColor: "white",
     padding: "50px",
     marginTop: '110px'
 }
 
 const row3_medium = {
-    
+
     marginBottom: "102px"
 }
 
@@ -268,9 +268,9 @@ export const LandingSection = () => {
             <>
                 <div style={row1_medium}>
                     <img src={child} width="100%" height="700px" className="bg-image" />
-                    <h1 className="image-text1">My Case</h1>
-                    <h1 className="image-text2">US Refugee Admissions</h1>
-                    <h1 className="image-text3">Program</h1>
+                    <h1 className="medium-image-text1">My Case</h1>
+                    <h1 className="medium-image-text2">US Refugee Admissions</h1>
+                    <h1 className="medium-image-text3">Program</h1>
 
                     <p className="medium-image-text4">RSC Africa is operated by CWS as part</p>
                     <p className="medium-image-text5">of a cooperative agreement with</p>
