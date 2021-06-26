@@ -17,9 +17,10 @@
 .image-text2{
     color:white;
     position:absolute;
-    top: 85px;
-    font-size: 40px;
-    font-weight: bold;
+    top: 80px;
+    font-size: 52px;
+    font-weight: bolder;
+    font-family: Lato Heavy;
     left:50%;
     
 }
@@ -28,12 +29,44 @@
     color:white;
     position:absolute;
     top: 135px;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 52px;
+    font-weight: bolder;
     left:50%;
-    font-family: Lato;
+    font-family: Lato Heavy;
 }
 
+
+.medium-image-text1{
+    color:white;
+    position:absolute;
+    top: 15px;
+    font-size: 39px;
+    font-weight: bolder;
+    left:50%;
+    font-family: Lato Heavy;
+}
+
+
+.medium-image-text2{
+    color:white;
+    position:absolute;
+    top: 80px;
+    font-size: 39px;
+    font-weight: bolder;
+    font-family: Lato Heavy;
+    left:50%;
+    
+}
+
+.medium-image-text3{
+    color:white;
+    position:absolute;
+    top: 135px;
+    font-size: 39px;
+    font-weight: bolder;
+    left:50%;
+    font-family: Lato Heavy;
+}
 .image-text4{
     color:white;
     position:absolute;
