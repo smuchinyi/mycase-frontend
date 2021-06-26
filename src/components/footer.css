@@ -7,11 +7,11 @@
     max-width:200px !important;
  }
 #title{
-    font-size:40x;
+    font-size:40px;
     font-weight: bolder;
     color: white;
     position:absolute;
-    top: 40px;
+    top: 20px;
     left: 50%;
     transform: translate(-50%, -50%);
  }
@@ -28,10 +28,10 @@
 
 
  .operation{
-    width:60%;
+    width:100%;
     color:rgb(255,255,255);
-    font-family:sans-serif;
-    font-size: small;
+    font-family:lato;
+    font-size:17px;
     padding: 20px;
  }
 

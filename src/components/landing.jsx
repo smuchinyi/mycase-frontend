@@ -35,8 +35,8 @@ const form = {
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
-    top: "320px",
-    right: "100px",
+    top: "220px",
+    left: "50px",
     padding: "20px",
     marginTop: '100px'
 }
@@ -95,8 +95,8 @@ const form_medium = {
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
-    top: "320px",
-    right: "30px",
+    top: "230px",
+    left: "50px",
     padding: "20px",
     marginTop: '100px'
 }
@@ -138,11 +138,11 @@ export const LandingSection = () => {
             <>
                 <div style={row1_mobile}>
                     <img src={child} width="100%" height="300px" className="bg-image" />
-                    <h1 className="mobile-image-text1">MyCase</h1>
-                    <h1 className="mobile-image-text2">US Refugee Admissions</h1>
-                    <h1 className="mobile-image-text3">Program</h1>
+                    <p className="mobile-image-text1">MyCase</p>
+                    <p className="mobile-image-text2">US Refugee Admissions</p>
+                    <p className="mobile-image-text3">Program</p>
 
-                    <p className="mobile-image-text4">RSC is operated by CWS as part</p>
+                    <p className="mobile-image-text4">RSC Africa is operated by CWS as part</p>
                     <p className="mobile-image-text5">of a cooperative agreement</p>
                     <p className="mobile-image-text6">with the US Department of state</p>
 
@@ -272,7 +272,7 @@ export const LandingSection = () => {
                     <h1 className="image-text2">US Refugee Admissions</h1>
                     <h1 className="image-text3">Program</h1>
 
-                    <p className="medium-image-text4">RSC is operated by CWS as part</p>
+                    <p className="medium-image-text4">RSC Africa is operated by CWS as part</p>
                     <p className="medium-image-text5">of a cooperative agreement with</p>
                     <p className="medium-image-text6">the US Department of state</p>
 
@@ -398,11 +398,11 @@ export const LandingSection = () => {
         <>
             <div style={row1}>
                 <img src={child} width="100%" height="700px" className="bg-image" />
-                <h1 className="image-text1">MyCase</h1>
-                <h1 className="image-text2">US Refugee Admissions</h1>
-                <h1 className="image-text3">Program</h1>
+                <p className="image-text1">MyCase</p>
+                <p className="image-text2">US Refugee Admissions</p>
+                <p className="image-text3">Program</p>
 
-                <p className="image-text4">RSC is operated by CWS as part of a cooperative</p>
+                <p className="image-text4">RSC Africa is operated by CWS as part of a cooperative</p>
                 <p className="image-text5"> agreement with the US Department of state</p>
                 {/* <p className="image-text6">the US Department of state</p> */}
 
@@ -483,7 +483,7 @@ export const LandingSection = () => {
                 </div>
             </div>
             <div style={row2}>
-                <h1 style={{ fontWeight: "bold", fontSize: "24px" }}>{t('how_to_use')}</h1>
+                <h1 style={{ fontWeight: "bold", fontSize: "40px" }}>{t('how_to_use')}</h1>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('dear_text')}</p>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('first_paragraph')}</p>
                 <p style={{ color: "black", fontSize: "17px" }}>{t('second_paragraph')}</p>
@@ -493,7 +493,7 @@ export const LandingSection = () => {
 
             <Row style={row3} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
                 <Col span={16} style={{ backgroundColor: "#353582", padding: "50px", textAlign: "center" }}>
-                    <h1 style={{ color: "white", fontWeight: "bold", fontSize: "45px" }}>Notice</h1>
+                    <h1 style={{ color: "white", fontWeight: "bold", fontSize: "40px" }}>Notice</h1>
                     <p style={{ color: "white", fontSize: "18px" }}>The U.S. Government and RSC Africa, operated by CWS, are dedicated to ensuring the safety
                         and security of refugee applicants and our staff around the world who support the U.S. Refugee
                         Admissions Program (USRAP). For the latest information regarding COVID-19 and how to best

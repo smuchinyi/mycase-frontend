@@ -14,32 +14,34 @@ const main = {
     padding: 0
 }
 
-const content = (
+const core_content = (
     <div style={{ textAlign: "center" }}>
-        <p>Lorem ipsum dolor sit amet, consectetuer</p>
-        <p>uismod tincidunt ut laoreet dolore magn</p>
-        <p>aliquam erat volutpat. Ut wisi enim ad</p>
-        <p>minim veniam, quis nostrud exerci tation</p>
-        <p>ullamcorper suscipit lobortis nisl ut aliquip</p>
-        <button>Visit Website</button>
+        <p>Click <a target='_blank' href='https://coresourceexchange.org/'>here</a> to access additional resources on<br/> the U.S. Refugee Admissions Program</p>
+
+    </div>
+);
+
+const cws_content = (
+    <div style={{ textAlign: "center" }}>
+        <p>Click <a target='_blank' href='https://cwsafrica.org'>here</a>to know more about Church World Service<br/> and their work around the globe.</p>
+
     </div>
 );
 
 
-
 const logo = {
-    height: 40,
-    width: 100
+    height: 80,
+    width: 200
 }
 
 const logo2 = {
-    height: 40,
-    width: 80
+    height: 80,
+    width: 200
 }
 
 const logo_mobile = {
-    height: 30,
-    width: 80
+    height: 40,
+    width: 150
 }
 
 
@@ -71,12 +73,12 @@ export const FooterSection = () => {
                         States Department of State.</span></div>
                     <div className='core-logo'>
                         <div>
-                            <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                            <Popover content={core_content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                                 <img src='images/CWS-12.png' style={logo2} />
                             </Popover></div>
                     </div>
                     <div className='wcs-logo'>
-                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                        <Popover content={cws_content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src={cws} style={logo_mobile} />
                         </Popover>
                     </div>
@@ -163,11 +165,11 @@ export const FooterSection = () => {
                         </p>
                     </div>
                     <div>
-                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                        <Popover content={core_content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src='images/CWS-12.png' style={logo2} />
                         </Popover></div>
                     <div>
-                        <Popover content={content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
+                        <Popover content={cws_content} title="CWS" placement="right" style={{ backgroundColor: "black" }}>
                             <img src={cws} style={logo} />
                         </Popover></div>
                 </div>
