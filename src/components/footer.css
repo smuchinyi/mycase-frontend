@@ -8,10 +8,10 @@
  }
 #title{
     font-size:40px;
-    font-weight: bolder;
+    font-weight: bold;
     color: white;
     position:absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
  }
