@@ -75,7 +75,7 @@ export const Case = () => {
                 </div>
 
                 <div className='helpCase'>
-                    <div id='help-title'><span >How Can I Help MyCase</span></div>
+                    <div id='help-title'><span >How Can I Help My Case</span></div>
                     <Row>
                         <Col span={24} className="col-items">
                             <img src='images/CWS-08.png' width="50%" />
@@ -132,7 +132,7 @@ export const Case = () => {
 
                 <div className="contacts">
                     <p id='contacts-title'>How to Contact RSC Africa</p>
-                    <p id='contacts-p'>
+                    <p id='contacts-p-mobile'>
 
                         1.Write an email to <b>case@CWSAfrica.org</b><br />
                         2.Write a letter and give it to RSC Africa staff<br />
@@ -215,42 +215,52 @@ export const Case = () => {
             </div>
 
             <div className='helpCase'>
-                <div id='help-title'><span >How Can I Help MyCase</span></div>
+                <div id='help-title'><span >How Can I Help My Case</span></div>
                 <Row>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-08.png' width="50%" height="300px" />
+                        <img src='images/CWS-08.png' width="50%" margin='100px' />
+                         <div className='col-itmes-div'>
                         <span id='info-title'>Always Tell the Truth</span>
-                        <p>
-                            Knowingly providing false information can affect
-                            your eligibility for resettlement to the United States.</p>
+                        <p>Knowingly providing false information can affect
+                        your eligibility for resettlement to the United States.</p></div>
+                            
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-09.png' width="50%" height="300px"/>
+                        <img src='images/CWS-09.png' width="50%" />
+                        <div className='col-itmes-div'>
                         <span id='info-title'>Come to All Your Appointments</span>
                         <p>
                             Please come to all your RSC Africa scheduled
                             interviews, IOM medical appointments, and cultural
                             orientation sessions.</p>
+                            </div>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-07.png' width="50%" height="315px" />
+                        <img src='images/CWS-07.png' width="50%"  />
+                        <div className='col-itmes-div'>
                         <span id='info-title'>Bring All Important Documents to Interviews</span>
                         <p>
                             Make sure to have all important documents ready at each
                             interview, including marriage certificates, birth certificates,
                             and any registration documents.
                         </p>
+                        </div>
                     </Col>
                 </Row>
                 <Row>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-11.png' width="50%" height="300px" />
+
+                        <img src='images/CWS-11.png' width="50%"  />
+                        <div className='col-itmes-div'>
                         <span id='info-title'>Inform Us of Any Changes to Your Family</span>
                         <p>Tell RSC Africa about any marriages, deaths or births that
                             have happened for members on your case.</p>
+                            </div>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-10.png' width="50%" height="345px" />
+                        
+                        <img src='images/CWS-10.png' width="50%"  />
+                        <div className='col-itmes-div'>
                         <span id='info-title'>Provide All of Your Contact Information</span>
                         <p>
                             Tell RSC Africa all your contact information at your first
@@ -258,16 +268,19 @@ export const Case = () => {
                             Please try to keep the same contact information throughout
                             the resettlement process.
                         </p>
+                        </div>
                     </Col>
                     <Col span={8} className="col-items">
-                        <img src='images/CWS-06.png' width="50%" height="300px" />
-                        <span id='info-title'>Inform Us if You Move</span>
+                        <img src='images/CWS-06.png' width="50%"  />
+                        <div className='col-itmes-div'>
+                            <span id='info-title'>Inform Us if You Move</span>
                         <p>
                             Tell RSC Africa about any changes to your current
                             location. If you or a family member moves to a
                             different camp or city, RSC Africa will need to know
                             for scheduling future appointments.
                         </p>
+                            </div>
                     </Col>
                 </Row>
             </div>

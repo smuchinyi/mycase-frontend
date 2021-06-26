@@ -194,6 +194,7 @@
     font-size: 48px;
 }
 
+
 .user-info{
     display: flex;
     flex-direction: row;
@@ -203,6 +204,20 @@
        
 }
 
+.col-itmes-div{
+    height: 200px;
+    display: block;
+    margin-top: 10px;
+    
+   
+}
+
+#contacts-p{
+    font-family: Lato Regular 16 ;
+}
+#contacts-p-mobile{
+    font-family: mobile Lato Regular 14;
+}
 input[type=text],input[type=text]:focus,input[type=file],input[type=file]:focus{
     border: none;
     background-color: transparent;

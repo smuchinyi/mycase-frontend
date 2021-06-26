@@ -21,10 +21,11 @@
    color: white;
    position:absolute;
    top: 140px;
-   font-size: 17px;
    left: 50%;
    text-align: center;
    transform: translate(-50%, -50%);
+   font-family: Lato Regular;
+   font-size: 16px;
  }
 
 
@@ -87,17 +88,17 @@
   color: white;
   position:absolute;
   top: 180px;
-  font-size: 13px;
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
+  font-family: Lato Regular;
+  font-size: 14px;
 }
 
 
 .mobile-operation{
    width:100%;
    color:rgb(255,255,255);
-   font-family:sans-serif;
    font-size: small;
    padding: 20px;
 }
@@ -106,5 +107,6 @@
 .mobileFraudSection{
   position: relative;
   height: 355px;
+  
 }
  

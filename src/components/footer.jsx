@@ -36,7 +36,7 @@ const logo = {
 
 const logo2 = {
     height: 80,
-    width: 300
+    width: 150
 }
 
 const logo_mobile = {
@@ -87,7 +87,7 @@ export const FooterSection = () => {
 
                             <div className='footer-contacts'>
                                 <span className='contact-title'>
-                                    RSC CONTACT INFORMATION:
+                                    RSC Africa CONTACT INFORMATION:
                                 </span>
                                 <p className='contact-info'>
                                     P.O. Box 14176-00800,<br />
@@ -143,7 +143,7 @@ export const FooterSection = () => {
                 <div className='footer-last'>
                     <div>
                         <span className='contact-title'>
-                            RSC CONTACT INFORMATION:
+                            RSC Africa CONTACT INFORMATION:
                         </span>
                         <p className='contact-info'>
                             P.O. Box 14176-00800,<br />

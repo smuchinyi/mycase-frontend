@@ -6,29 +6,29 @@
 .image-text1{
     color:white;
     position:absolute;
-    top: 30px;
-    font-size: 48px;
+    top: 15px;
+    font-size: 52px;
     font-weight: bolder;
     left:50%;
-    font-family: Lato;
+    font-family: Lato Heavy;
 }
 
 
 .image-text2{
     color:white;
     position:absolute;
-    top: 100px;
-    font-size: 44px;
+    top: 85px;
+    font-size: 40px;
     font-weight: bold;
     left:50%;
-    font-family: Lato;
+    
 }
 
 .image-text3{
     color:white;
     position:absolute;
-    top: 170px;
-    font-size: 44px;
+    top: 135px;
+    font-size: 40px;
     font-weight: bold;
     left:50%;
     font-family: Lato;
@@ -37,31 +37,35 @@
 .image-text4{
     color:white;
     position:absolute;
-    top: 240px;
-    font-size: 20px;
+    top: 200px;
+    font-size: 16px;
     left:50%
 }
 .image-text5{
     color:white;
     position:absolute;
-    top: 280px;
-    font-size: 20px;
-    left:50%
+    top: 230px;
+    font-size: 16px;
+    left:50%;
+    font-family:  Lato Regular ;
 }
 
 .medium-image-text4{
     color:white;
     position:absolute;
     top: 240px;
-    font-size: 20px;
-    left:50%
+    font-size: 16px;
+    left:50%;
+    font-family:  Lato Regular ;
+    
 }
 .medium-image-text5{
     color:white;
     position:absolute;
     top: 270px;
-    font-size: 20px;
-    left:50%
+    font-size: 16px;
+    left:50%;
+    font-family:  Lato Regular ;
 }
 
 .medium-image-text6{
@@ -69,7 +73,8 @@
     position:absolute;
     top: 300px;
     font-size: 20px;
-    left:50%
+    left:50%;
+    font-family:  Lato Regular ;
     
 }
 
@@ -90,6 +95,7 @@
     font-weight: bold;
     left: 20px;
     text-align: center;
+    font-family: Lato Heavy;
 }
 
 
@@ -99,7 +105,9 @@
     top: 40px;
     font-size:26px;
     font-weight: bold;
-    left: 20px
+    left: 20px;
+    font-family: Lato Heavy;
+
 }
 
 .mobile-image-text3{
@@ -108,28 +116,29 @@
     top: 70px;
     font-size: 26px;
     font-weight: bold;
-    left: 20px
+    left: 20px;
+    font-family: Lato Heavy;
 }
 
 .mobile-image-text4{
     color:white;
     position:absolute;
     top: 120px;
-    font-size: 16px;
+    font-size: 14px;
     left: 15px;
 }
 .mobile-image-text5{
     color:white;
     position:absolute;
     top: 140px;
-    font-size: 16px;
+    font-size: 14px;
     left: 15px;
 }
 .mobile-image-text6{
     color:white;
     position:absolute;
     top: 160px;
-    font-size: 16px;
+    font-size: 14px;
     left: 15px;
 }
 
