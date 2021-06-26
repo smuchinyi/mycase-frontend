@@ -31,7 +31,7 @@ const cws_content = (
 
 const logo = {
     height: 80,
-    width: 300
+    width: 350
 }
 
 const logo2 = {
