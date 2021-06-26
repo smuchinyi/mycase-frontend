@@ -87,7 +87,7 @@ export const FooterSection = () => {
 
                             <div className='footer-contacts'>
                                 <span className='contact-title'>
-                                    RSC Africa CONTACT INFORMATION:
+                                    RSC AFRICA CONTACT INFORMATION:
                                 </span>
                                 <p className='contact-info'>
                                     P.O. Box 14176-00800,<br />
@@ -143,7 +143,7 @@ export const FooterSection = () => {
                 <div className='footer-last'>
                     <div>
                         <span className='contact-title'>
-                            RSC Africa CONTACT INFORMATION:
+                            RSC AFRICA CONTACT INFORMATION:
                         </span>
                         <p className='contact-info'>
                             P.O. Box 14176-00800,<br />

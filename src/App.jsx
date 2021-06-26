@@ -9,9 +9,8 @@ import { NotFound } from './pages/NotFound.jsx';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { RefugeeResources } from './components/refugee_resources';
-import { ContactUs } from './pages/contacts';
 import { ContactUs } from './pages/contactUs';
-import {PublicResources} from './pages/publicResources';
+import {PublicResources} from './pages/publicResources.jsx';
 
 
 function App() {

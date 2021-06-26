@@ -105,7 +105,7 @@ form{
     background-color: rgb(223,143,47);
     text-align: center;
     font-size: medium;
-    padding: 40px;
+    padding: 50px;
     
     
     
@@ -115,8 +115,10 @@ form{
    
 }
 #contact-us-title{
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: black;
 }
 
 
@@ -214,3 +216,20 @@ form{
  ::-webkit-input-placeholder{
      color:#605E5F;
  }
+
+ .contact-icons{
+     width: 28px;
+     height: 30px;
+     margin: 5px;
+ }
+
+ #selsect select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: 1px solid #dfdfdf;
+  border-radius: 2px;
+  margin-right: 10px;
+  padding: 1rem;
+  padding-right: 2rem;
+}

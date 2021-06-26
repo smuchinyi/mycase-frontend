@@ -55,9 +55,9 @@ console.log('form---->',emailBody);
       <div className='contact-us-container'>
      
       <div className='contact-us-div'>
-          <p><h1 id ='contact-us-title'>Contact Us</h1><br/>
-          Email – case@cwsafrica.org<br/>
-Mail – P.O. Box 14176-00800</p>
+          <p><span id ='contact-us-title'>Contact Us</span><br/>
+         <img src='images/email-con.png' className='contact-icons' />Email – case@cwsafrica.org<br/>
+<img src='images/email-con.png' className='contact-icons' />Mail – P.O. Box 14176-00800</p>
           </div>
          
      <div className="form-div">
@@ -68,8 +68,17 @@ Mail – P.O. Box 14176-00800</p>
   <p>
 <select name="topic" id="select" placeholder='Select Topic' onChange={formHandler}>
   <option value="A">Select topic</option>
-  <option value="B">B</option>
-  <option value="C">C</option>
+  <option value="B">General Case Inquiry
+</option>
+  <option value="D"> Case Member Update</option>
+  <option value="E">  Address Change
+</option>
+  <option value="H"> Contact Change
+</option>
+<option value="P">   Request for Review Submission
+</option>
+<option value='k'>  Other</option>
+
 </select>
   </p>
   <p><textarea id='text-area' name='message' placeholder="Message" onChange={formHandler} required/></p>
