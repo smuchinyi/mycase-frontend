@@ -57,7 +57,7 @@ console.log('form---->',emailBody);
       <div className='contact-us-div'>
           <div className='icons-div'><span id ='contact-us-title'>Contact Us</span></div>
          <div className='icons-div'><img src='images/email-con.png' className='contact-icons' /><span>Email – case@cwsafrica.org</span></div>
-<div><img src='images/email-con.png' className='contact-icons' /><span>Mail – P.O. Box 14176-00800</span></div>
+<div><img src='images/mail-icon.png' className='contact-icons' /><span>Mail – P.O. Box 14176-00800</span></div>
           </div>
          
      <div className="form-div">

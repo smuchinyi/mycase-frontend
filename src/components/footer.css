@@ -1,3 +1,5 @@
+
+
 .popover-inner {
     width: 200px !important;
     max-width:200px !important;
@@ -14,6 +16,7 @@
     top: 34px;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: Lato Regular;
     
  }
 
@@ -32,8 +35,8 @@
  .operation{
     width:100%;
     color:rgb(255,255,255);
-    font-family:sans-serif;
-    font-size: small;
+    font-family: Lato Regular;
+    font-size:14px;
     padding: 20px;
  }
 
@@ -56,8 +59,8 @@
     display: flex;
     flex-direction: row;
     color:rgb(255,255,255);
-    font-family:sans-serif;
-    font-size:15px;
+    font-family: Lato Regular;
+    font-size:16px;
     padding: 20px;
     justify-content: space-between;
  }
@@ -66,8 +69,8 @@
    display: flex;
    flex-direction: row;
    color:rgb(255,255,255);
-   font-family:sans-serif;
-   font-size:13px;
+   font-family: Lato Regular;
+   font-size:14px;
    padding: 8px;
    justify-content: space-between;
 }

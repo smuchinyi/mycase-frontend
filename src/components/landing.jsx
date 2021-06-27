@@ -44,7 +44,8 @@ const form = {
 const row1_mobile = {
     position: "relative",
     textAlign: 'center',
-    height: "400px"
+    height: "400px",
+    width:"100%"
 }
 
 const row2_mobile = {
@@ -52,7 +53,8 @@ const row2_mobile = {
     padding: "50px",
     marginTop: "250px",
     scrollX: 'auto',
-    fontSize: '1.2vmin'
+    fontSize: '1.2vmin',
+    fontFamily:'Lato'
 
 }
 
