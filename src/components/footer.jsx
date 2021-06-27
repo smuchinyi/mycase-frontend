@@ -74,7 +74,7 @@ export const FooterSection = () => {
                         <p className="mobile-fraud-text" ><span id='mobile-title'>Fraud Reporting</span><br/> <span >USRAP ggremains free of charge and applicants should not engage with anyone who is asking you to pay or
                             provide services for information or a change in status on your case.<br />
                             Please report any instances of fraud or abuse to the RSC’s confidential email box at</span><br /><br />
-                            <span style={{ fontWeight: "bold", fontStyle: "italic" }}>fraud@CWSAfrica.org</span>
+                            <span style={{ fontWeight: "bold"}}>fraud@CWSAfrica.org</span>
                         </p>
 
                     </div>
@@ -142,7 +142,7 @@ export const FooterSection = () => {
                     <p className="fraud-text">USRAP remains free of charge and applicants should not engage with anyone who is asking you to pay or
                         provide services for information or a change in status on your case.<br />
                         Please report any instances of fraud or abuse to the RSC’s confidential email box at<br /><br />
-                        <span style={{ fontWeight: "bold", fontStyle: "italic" }}>fraud@CWSAfrica.org</span>
+                        <span style={{ fontWeight: "bold"}}>fraud@CWSAfrica.org</span>
                     </p>
 
                 </div>

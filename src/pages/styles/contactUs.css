@@ -5,14 +5,15 @@
     position: relative;
     background-image: url('/src/images/child-fl4.png');
     background-repeat: no-repeat;
-    background-size: 100% 900px;
+    background-size:cover;
     padding: 80px 100px 80px 120px ;
     object-fit: cover;
-    background-position: 0 -240px;
+    background-position: 0 -380px;
     height: fit-content;
+    filter: brightness(70%);
+    overflow: hidden;
     
-   
-    
+  
     
 }
  
@@ -233,6 +234,6 @@ form{
   padding: 1rem;
   padding-right: 2rem;
 }
-.div-icons{
-    width: 200px;
+.icons-div{
+    height: fit-content;
 }
