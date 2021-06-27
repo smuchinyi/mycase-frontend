@@ -22,7 +22,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #FFFFFF;
+    background-color: #E0E1E2;
     height: 450px;
     opacity: 0.9;  
     
@@ -223,7 +223,7 @@ form{
      margin: 5px;
  }
 
- #selsect select {
+ #selsect option {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
@@ -232,4 +232,7 @@ form{
   margin-right: 10px;
   padding: 1rem;
   padding-right: 2rem;
+}
+.div-icons{
+    width: 200px;
 }

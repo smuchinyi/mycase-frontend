@@ -75,7 +75,7 @@ export const Case = () => {
                 </div>
 
                 <div className='helpCase'>
-                    <div id='help-title'><span >How Can I Help My Case</span></div>
+                    <div id='mobile-help-title'><span >How Can I Help My Case</span></div>
                     <Row>
                         <Col span={24} className="col-items">
                             <img src='images/CWS-08.png' width="50%" />
@@ -131,7 +131,7 @@ export const Case = () => {
                 </div>
 
                 <div className="contacts">
-                    <p id='contacts-title'>How to Contact RSC Africa</p>
+                    <p id='mobile-contacts-title'>How to Contact RSC Africa</p>
                     <p id='contacts-p-mobile'>
 
                         1.Write an email to <b>case@CWSAfrica.org</b><br />

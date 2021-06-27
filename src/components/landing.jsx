@@ -44,7 +44,7 @@ const form = {
 const row1_mobile = {
     position: "relative",
     textAlign: 'center',
-    height: "300px"
+    height: "400px"
 }
 
 const row2_mobile = {
@@ -86,12 +86,12 @@ const row2_medium = {
 
 const row3_medium = {
 
-    marginBottom: "102px"
+    marginBottom: "0"
 }
 
 const form_medium = {
     height: "525px",
-    width: "510px",
+    width: "420px",
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
@@ -272,9 +272,9 @@ export const LandingSection = () => {
                     <h1 className="medium-image-text2">US Refugee Admissions</h1>
                     <h1 className="medium-image-text3">Program</h1>
 
-                    <p className="medium-image-text4">RSC Africa is operated by CWS as part</p>
-                    <p className="medium-image-text5">of a cooperative agreement with</p>
-                    <p className="medium-image-text6">the US Department of state</p>
+                    <p className="medium-image-text4">RSC Africa is operated by CWS </p>
+                    <p className="medium-image-text5">as partof a cooperative agreement </p>
+                    <p className="medium-image-text6">with the US Department of state</p>
 
                     <div style={form_medium}>
                         <h1 style={{ fontWeight: "bold", textAlign: "center", fontSize: "40px" }}>{t('check_my_case')}</h1>
@@ -353,13 +353,13 @@ export const LandingSection = () => {
                     </div>
                 </div>
                 <div style={row2_medium}>
-                    <h1 style={{ fontWeight: "bold", fontSize: "24px" }}>{t('how_to_use')}</h1>
-                    <p style={{ color: "black", fontSize: "20px" }}>{t('dear_text')}</p>
-                    <p style={{ color: "black", fontSize: "20px" }}>{t('first_paragraph')}</p>
-                    <p style={{ color: "black", fontSize: "20px" }}>{t('second_paragraph')}</p>
-                    <p style={{ color: "black", fontSize: "20px" }}>{t('third_paragraph')}</p>
-                    <p style={{ color: "black", fontSize: "20px" }}>{t('fourth_paragraph')}</p>
-                    <p style={{ color: "black", fontSize: "20px" }}>{t('fiveth_paragraph')}</p>
+                    <h1 style={{ fontWeight: "bold", fontSize: "26x" }}>{t('how_to_use')}</h1>
+                    <p style={{ color: "black", fontSize: "16px" }}>{t('dear_text')}</p>
+                    <p style={{ color: "black", fontSize: "16px" }}>{t('first_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "16px" }}>{t('second_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "16px" }}>{t('third_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "16px" }}>{t('fourth_paragraph')}</p>
+                    <p style={{ color: "black", fontSize: "16px" }}>{t('fiveth_paragraph')}</p>
                 </div>
 
                 <Row style={row3_medium} gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
@@ -402,8 +402,8 @@ export const LandingSection = () => {
                 <p className="image-text2">US Refugee Admissions</p>
                 <p className="image-text3">Program</p>
 
-                <p className="image-text4">RSC Africa is operated by CWS as part of a cooperative</p>
-                <p className="image-text5"> agreement with the US Department of state</p>
+                <p className="image-text4">RSC Africa is operated by CWS as part of a cooperative agreement with the US Department of state</p>
+                
                 {/* <p className="image-text6">the US Department of state</p> */}
 
                 <div style={form}>

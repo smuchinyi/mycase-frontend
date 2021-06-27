@@ -29,7 +29,7 @@
     font-weight: bolder;
 }
 .status-display{
-    padding: 40px;
+    padding: 20px;
     position: absolute;
     transform: translate(-50%, -50%);
     left: 50%;
@@ -42,8 +42,9 @@
     background-color:rgb(16,77,132) ;
     text-align: center;
     color:rgb(255,255,255);
-    font-size: 18px;
-    padding: 20px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bolder;
 
 }
 .status-body{
@@ -71,7 +72,7 @@
     margin-bottom: 20px;
 }
 #mobile-header{
-    font-size: 15px;
+    font-size: 26px;
     font-weight: bolder;
 }
 .mobile-status-display{
@@ -88,7 +89,7 @@
     background-color:rgb(16,77,132) ;
     text-align: center;
     color:rgb(255,255,255);
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px;
 
 }
@@ -108,12 +109,12 @@
 }
 
 .mobile-right-value{
-    font-size: 16px;
+    font-size: 14px;
     color: black;
 }
 
 .mobile-label{
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bolder;
     display: block;
     width: 200px;
@@ -128,7 +129,7 @@
 
 .label{
     margin-right: 50px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bolder;
     display: block;
     width: 200px;
@@ -156,7 +157,19 @@
 #help-title{
     font-weight: bolder;
     margin-top: 30px;
-    font-size: 48px;
+    font-size: 40px;
+    text-align: center;
+}
+
+#mobile-help-title{
+    font-weight: bolder;
+    margin-top: 15px;
+    font-size: 26px;
+    text-align: center;
+}
+#mobile-contacts-title{
+    font-weight: bolder;
+    font-size: 26px;
     text-align: center;
 }
 
@@ -170,7 +183,8 @@
 }
 #info-title{
     font-weight: bolder;
-    display: inline-block
+    display: inline-block;
+    font-size: 16px;
     
 }
 
@@ -182,7 +196,7 @@
 }
 #contacts-title{
     font-weight: bolder;
-    font-size: x-large;
+    font-size: 26px;
 }
 
 .account-details{
@@ -191,7 +205,7 @@
 
 .details-title{
     font-weight: bolder;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 
@@ -199,7 +213,7 @@
     display: flex;
     flex-direction: row;
     font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Lato;
     padding-bottom: 20px; 
        
 }

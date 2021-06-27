@@ -6,10 +6,10 @@
 .image-text1{
     color:white;
     position:absolute;
-    top: 15px;
-    font-size: 52px;
+    top: 10px;
+    font-size: 60px;
     font-weight: bolder;
-    left:50%;
+    left:45%;
     font-family: Lato Heavy;
 }
 
@@ -17,32 +17,46 @@
 .image-text2{
     color:white;
     position:absolute;
-    top: 80px;
-    font-size: 52px;
+    top: 110px;
+    font-size: 60px;
     font-weight: bolder;
     font-family: Lato Heavy;
-    left:50%;
+    left:45%;
     
 }
 
 .image-text3{
     color:white;
     position:absolute;
-    top: 135px;
-    font-size: 52px;
+    top: 210px;
+    font-size: 60px;
     font-weight: bolder;
-    left:50%;
+    left:45%;
     font-family: Lato Heavy;
 }
-
+.image-text4{
+    color:white;
+    position:absolute;
+    top: 330px;
+    font-size: 40px;
+    left:45%
+}
+.image-text5{
+    color:white;
+    position:absolute;
+    top: 230px;
+    font-size: 40px;
+    left:45%;
+    font-family:  Lato Regular ;
+}
 
 .medium-image-text1{
     color:white;
     position:absolute;
-    top: 15px;
-    font-size: 39px;
+    top: 10px;
+    font-size: 49px;
     font-weight: bolder;
-    left:50%;
+    left:45%;
     font-family: Lato Heavy;
 }
 
@@ -50,63 +64,49 @@
 .medium-image-text2{
     color:white;
     position:absolute;
-    top: 80px;
-    font-size: 39px;
+    top: 90px;
+    font-size: 49px;
     font-weight: bolder;
     font-family: Lato Heavy;
-    left:50%;
+    left:45%;
     
 }
 
 .medium-image-text3{
     color:white;
     position:absolute;
-    top: 135px;
-    font-size: 39px;
+    top: 170px;
+    font-size: 49px;
     font-weight: bolder;
-    left:50%;
+    left:45%;
     font-family: Lato Heavy;
 }
-.image-text4{
-    color:white;
-    position:absolute;
-    top: 200px;
-    font-size: 16px;
-    left:50%
-}
-.image-text5{
-    color:white;
-    position:absolute;
-    top: 230px;
-    font-size: 16px;
-    left:50%;
-    font-family:  Lato Regular ;
-}
+
 
 .medium-image-text4{
     color:white;
     position:absolute;
-    top: 240px;
-    font-size: 16px;
-    left:50%;
+    top: 260px;
+    font-size: 35px;
+    left:45%;
     font-family:  Lato Regular ;
     
 }
 .medium-image-text5{
     color:white;
     position:absolute;
-    top: 270px;
-    font-size: 16px;
-    left:50%;
+    top: 320px;
+    font-size: 35px;
+    left:45%;
     font-family:  Lato Regular ;
 }
 
 .medium-image-text6{
     color:white;
     position:absolute;
-    top: 300px;
-    font-size: 20px;
-    left:50%;
+    top: 380px;
+    font-size: 35px;
+    left:45%;
     font-family:  Lato Regular ;
     
 }
@@ -116,7 +116,7 @@
     position:absolute;
     top: 500px;
     font-size: 32px;
-    left:55%
+    left:45%
     
 }
 
@@ -174,5 +174,3 @@
     font-size: 14px;
     left: 15px;
 }
-
-
