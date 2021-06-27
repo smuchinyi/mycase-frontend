@@ -52,7 +52,7 @@ console.log('form---->',emailBody);
   return (
     <div className='contact-us-main-container'>
        
-      <div className='contact-us-container'>
+      {/* <div className='contact-us-container'> */}
      
       <div className='contact-us-div'>
           <div><span id ='contact-us-title'>Contact Us</span></div>
@@ -87,7 +87,7 @@ console.log('form---->',emailBody);
  </form>
      </div>
     
-     </div>
+     {/* </div> */}
      </div>
   );
 }

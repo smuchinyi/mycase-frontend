@@ -28,7 +28,7 @@ const row2 = {
 
 const row3 = {
     height: "700px",
-    padding:'20px'
+    paddingLeft:'2px'
 }
 
 const form = {

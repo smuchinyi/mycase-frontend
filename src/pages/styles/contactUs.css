@@ -18,17 +18,19 @@
 }
  
 
-    .contact-us-container{
+    /* .contact-us-container{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #E0E1E2;
+    background-color: white ;
     height: 450px;
-    opacity: 0.9;  
+      
     font-family: Lato;
+
     
-}
+    
+} */
 
 
 .bg-image{
@@ -37,12 +39,14 @@
 }
 .form-div{
     
-    width: 100%;
-    /* position: absolute; 
-    top: 60px; */
-    display: flex;
-    justify-content: center;
-    padding: 50px;
+   position:absolute;
+   padding: 50px;
+   background-color: white ;
+   height: 450px;
+   top:70px;
+   font-family: Lato;
+   left: 45%;
+   width: 48%;
     
    
     
@@ -55,39 +59,45 @@ form{
 
 
 #contact-input,#contact-input:focus{
-    background-color:#939598;
-    width: 450px;
+    background-color:#E0E1E2;
+    font-family: Lato;
+    font-size: 16;
+    width: 400px;
     border-radius: 0px;
     border: none;
     border-color: transparent;
     padding: 5px;
     font-weight: bolder;
-    font-size: small;
+   
 
 }
 #select,#select:focus{
-    background-color:#939598;
-    width: 450px;
+    background-color:#E0E1E2;
+    font-family: Lato;
+    font-size: 16;
+    width: 400px;
     border-radius: 0px;
     border: none;
     border-color: transparent;
     height: 30px;
     padding: 5px;
     font-weight: bolder;
-    font-size: small;
+    
 }
 
 
 #text-area,#text-area:focus{
-    background-color:#939598;
-    width: 450px;
+    background-color:#E0E1E2;
+    font-family: Lato;
+    font-size: 16;
+    width: 400px;
     border-radius: 0px;
     border: none;
     border-color: transparent;
     height: 150px;
     padding:5px;
     font-weight: bolder;
-    font-size: small;
+    
     
 }
 
@@ -99,28 +109,29 @@ form{
     height: 40px;
     width: 100px;
     cursor: pointer;
+    font-family: Lato;
+    font-size: 16px;
 
 }
 .contact-us-div{
-    width: 680px;
+    width: 450px;
     height: 450px;
+    position:absolute;
+    top:70px;
+    left:15%;
     background-color: rgb(223,143,47);
     text-align: center;
     font-size: medium;
     padding: 50px;
-    
-    
-    
-    
-   
-    
-   
+    font-family: Lato;
+    opacity: 0.8;  
 }
 #contact-us-title{
     font-size: 40px;
     font-weight: bold;
     margin-top: 40px;
     color: black;
+    font-family: Lato;
 }
 
 
@@ -150,7 +161,9 @@ form{
 }
 
 #select,#select:focus{
-    background-color:#939598;
+    background-color:#E0E1E2;
+    font-family: Lato;
+    font-size: 14;
     width: 100%;
     border-radius: 0px;
     border: none;
@@ -161,7 +174,9 @@ form{
 
 
 #text-area,#text-area:focus{
-    background-color:#939598;
+    background-color:#E0E1E2;
+    font-family: Lato;
+    font-size: 14;
     font-weight: bold;
     width: 100%;
     border-radius: 0px;
@@ -172,7 +187,9 @@ form{
 }
 
 #contact-input,#contact-input:focus{
-    background-color:#939598;
+    background-color:#E0E1E2;
+    font-family: Lato;
+    font-size: 14;
     border-radius: 0px;
     border: none;
     border-color: transparent;
@@ -197,6 +214,7 @@ form{
     background-color: rgb(223,143,47);
     text-align: center;
     font-size: small;
+    font-family: Lato;
     padding: 15px;
    
     
@@ -210,6 +228,11 @@ form{
     font-size: 18px;
     font-weight: bolder;
     margin-top: 15px;
+}
+
+.form-div{
+    position: relative;
+    width: 100%;
 }
 
 
@@ -238,5 +261,5 @@ form{
 }
 
 .icons-div{
-    margin-left: 10px;
+    margin-left: 5px;
 }

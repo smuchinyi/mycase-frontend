@@ -205,7 +205,7 @@ export const Case = () => {
                         <div className='case-info'> <span className='label'>RSC Interview:</span><span className="right-value">You have completed this step of the process</span></div>
                         <div className='case-info'> <span className='label'>USCIS Interview:</span><span className="right-value">You have completed this step of the process</span></div>
                         <div className='case-info'> <span className='label'>Security Status:
-                        </span><span>In Process</span></div>
+                        </span><span className="right-value">In Process</span></div>
                         <div className='case-info'> <span className='label'>Medical Status:</span><span className="right-value">___</span></div>
                         <div className='case-info'> <span className='label'>Cultural Orientation:</span><span className="right-value">___</span></div>
                         <div className='case-info'> <span className='label'>Travel Status:</span><span className="right-value">___</span></div>
