@@ -59,6 +59,16 @@
     background-color: #ea9b0a;
     font-weight: bold;
 }
+
+.arrow-prev{
+    color:#ea9b0a;
+    font-size: 48px;
+}
+
+.arrow-next{
+    color:#ea9b0a;
+    font-size: 48px;
+}
 .fr-travel-title{
     font-size: 45px;
     font-weight: bold;

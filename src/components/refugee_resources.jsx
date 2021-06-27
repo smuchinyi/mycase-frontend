@@ -18,6 +18,10 @@ import spouse from '../images/spouse.jpeg'
 import us_reset_process from '../images/us_reset_process.jpeg'
 import wat_can from '../images/wat_can.jpeg'
 import { DownOutlined, UserOutlined } from '@ant-design/icons';
+import ScrollMenu from 'react-horizontal-scrolling-menu';
+import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import { VideoScrollTemplate } from './video_scroll_template';
 
 
 
@@ -41,14 +45,56 @@ const travel = {
 }
 
 
+
 export const RefugeeResources = () => {
 
 
     const [currentLanguage, setCurrentLanguage] = useState("Select Language Download");
+    const [selectedVideo, setCurrentVideoSelected] = useState("item1")
     const theme = useTheme();
     const matches = useMediaQuery(theme.breakpoints.down('sm'));
     const matches_medium = useMediaQuery(theme.breakpoints.up('sm'))
     const matches_large = useMediaQuery(theme.breakpoints.down('md'))
+
+
+    // list of videos
+    const video_list = [
+        { title: 'video1', video_url: "" },
+        { title: 'video2', video_url: "" },
+        { title: 'video3', video_url: "" },
+        { title: 'video4', video_url: "" },
+        { title: 'video5', video_url: "" },
+        { title: 'video6', video_url: "" },
+        { title: 'video7', video_url: "" },
+        { title: 'video8', video_url: "" },
+        { title: 'video9', video_url: "" }
+    ];
+
+
+    const onSelect = key => {
+        setCurrentVideoSelected(key);
+    }
+
+    const videoMenu = (list, selected) =>
+
+        list.map(el =>
+            <VideoScrollTemplate title={el.title} video_url={el.video_url} selected={selected} />
+        );
+
+
+    const Arrow = ({ icon, className }) => {
+        return (
+            <div
+                className={className}
+            >{icon}</div>
+        );
+    };
+
+
+    const ArrowLeft = Arrow({ icon: <ArrowBackIosIcon fontSize='large' />, className: 'arrow-prev' });
+    const ArrowRight = Arrow({ icon: <ArrowForwardIosIcon fontSize='large' />, className: 'arrow-next' });
+
+    const menu_vids = videoMenu(video_list, selectedVideo)
 
     const handleLanguageClick = ({ key }) => {
         console.log(key);
@@ -289,6 +335,15 @@ export const RefugeeResources = () => {
                     </Col>
                 </Row>
                 <h1 className="fr-travel-title">Resource Videos</h1>
+                <ScrollMenu
+                    data={menu_vids}
+                    arrowLeft={ArrowLeft}
+                    arrowRight={ArrowRight}
+                    selected={selectedVideo}
+                    onSelect={onSelect}
+                />
+
+
             </div>
         </>
     )
