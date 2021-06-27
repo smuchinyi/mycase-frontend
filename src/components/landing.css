@@ -9,7 +9,7 @@
     top: 10px;
     font-size: 60px;
     font-weight: bolder;
-    left:45%;
+    left:30px;
     font-family: Lato Heavy;
 }
 
@@ -21,7 +21,7 @@
     font-size: 60px;
     font-weight: bolder;
     font-family: Lato Heavy;
-    left:45%;
+    left:30px;
     
 }
 
@@ -31,7 +31,7 @@
     top: 210px;
     font-size: 60px;
     font-weight: bolder;
-    left:45%;
+    left:30px;
     font-family: Lato Heavy;
 }
 .image-text4{
@@ -39,14 +39,14 @@
     position:absolute;
     top: 330px;
     font-size: 40px;
-    left:45%
+    left:30px
 }
 .image-text5{
     color:white;
     position:absolute;
     top: 230px;
     font-size: 40px;
-    left:45%;
+    left:20px;
     font-family:  Lato Regular ;
 }
 
@@ -56,7 +56,7 @@
     top: 10px;
     font-size: 49px;
     font-weight: bolder;
-    left:45%;
+    left:20px;
     font-family: Lato Heavy;
 }
 
@@ -68,7 +68,7 @@
     font-size: 49px;
     font-weight: bolder;
     font-family: Lato Heavy;
-    left:45%;
+    left:20px;
     
 }
 
@@ -78,7 +78,7 @@
     top: 170px;
     font-size: 49px;
     font-weight: bolder;
-    left:45%;
+    left:20px;
     font-family: Lato Heavy;
 }
 
@@ -88,7 +88,7 @@
     position:absolute;
     top: 260px;
     font-size: 35px;
-    left:45%;
+    left:10px;
     font-family:  Lato Regular ;
     
 }
@@ -97,7 +97,7 @@
     position:absolute;
     top: 320px;
     font-size: 35px;
-    left:45%;
+    left:10px;
     font-family:  Lato Regular ;
 }
 
@@ -106,7 +106,7 @@
     position:absolute;
     top: 380px;
     font-size: 35px;
-    left:45%;
+    left:10px;
     font-family:  Lato Regular ;
     
 }
@@ -116,7 +116,7 @@
     position:absolute;
     top: 500px;
     font-size: 32px;
-    left:45%
+    left:10px
     
 }
 

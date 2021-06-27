@@ -35,8 +35,8 @@ const form = {
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
-    top: "155px",
-    left: "50px",
+    top: "240px",
+    left: "50%",
     padding: "20px",
     marginTop: '100px'
 }
@@ -91,12 +91,12 @@ const row3_medium = {
 
 const form_medium = {
     height: "525px",
-    width: "420px",
+    width: "400px",
     backgroundColor: "#ea9b0a",
     position: "absolute",
     bottom: "0px",
-    top: "230px",
-    left: "10px",
+    top: "220px",
+    left:'50%',
     padding: "20px",
     marginTop: '100px'
 }
@@ -402,7 +402,7 @@ export const LandingSection = () => {
                 <p className="image-text2">US Refugee Admissions</p>
                 <p className="image-text3">Program</p>
 
-                <p className="image-text4">RSC Africa is operated by CWS as part of a cooperative agreement with the US Department of state</p>
+                <p className="image-text4">RSC Africa is operated <br/>by CWS as part of a cooperative <br/>agreement with the US<br/> Department of state</p>
                 
                 {/* <p className="image-text6">the US Department of state</p> */}
 
