@@ -7,6 +7,7 @@ import footer from '../images/footer4.png'
 import './footer.css';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Link } from 'react-router-dom';
 
 
 const main = {
@@ -114,11 +115,11 @@ export const FooterSection = () => {
                                     SITEMAP
                                 </span>
                                 <p className="siteMap">
-                                    Check my Case<br />
-                                    Gallery<br />
-                                    Refugee Resources<br />
-                                    Public Resources<br />
-                                    Contact Us<br />
+                                   <Link to="/status"  className='mobile-site-link'> Check my Case</Link><br />
+                                    <Link to='/gallery'  className='mobile-site-link'>Gallery</Link><br />
+                                    <Link to='/refugee-resources'  className='mobile-site-link'>Refugee Resources</Link><br />
+                                    <Link to='/public-resources'  className='mobile-site-link'>Public Resources</Link><br />
+                                    <Link to='/contact-us'  className='mobile-site-link'>Contact Us</Link><br />
                                 </p>
                             </div>
                         </div>
@@ -163,18 +164,18 @@ export const FooterSection = () => {
                         </p>
 
                     </div>
-                    <div>
-                        <span className='site-title'>
-                            SITEMAP
-                        </span>
-                        <p className="siteMap">
-                            Check my Case<br />
-                            Gallery<br />
-                            Refugee Resources<br />
-                            Public Resources<br />
-                            Contact Us<br />
-                        </p>
-                    </div>
+                     <div className='site-map'>
+                                <span className='site-title'>
+                                    SITEMAP
+                                </span>
+                                <p className="siteMap">
+                                   <Link to="/status"  className='site-link'> Check my Case</Link><br />
+                                    <Link to='/gallery'  className='site-link'>Gallery</Link><br />
+                                    <Link to='/refugee-resources'  className='site-link'>Refugee Resources</Link><br />
+                                    <Link to='/public-resources'  className='site-link'>Public Resources</Link><br />
+                                    <Link to='/contact-us'  className='site-link'>Contact Us</Link><br />
+                                </p>
+                            </div>
                     <div>
                         <Popover content={core_content} title="CORESOURCEEXCHANGE" placement="right" style={{ backgroundColor: "black" }}>
                             <img src='images/flogos-CORE.png' style={logo2} />

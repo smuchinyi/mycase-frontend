@@ -23,10 +23,12 @@
     font-weight: bold;
     font-size: 40px;
     color: white;
+    font-family: Lato;
 }
 #header{
     font-size: 40px;
     font-weight: bolder;
+    font-family: Loto;
 }
 .status-display{
     padding: 20px;
@@ -45,6 +47,7 @@
     font-size: 16px;
     padding: 10px;
     font-weight: bolder;
+    font-family: Lato;
 
 }
 .status-body{
@@ -70,10 +73,12 @@
     font-size: 26px;
     color:black;
     margin-bottom: 20px;
+    font-family: Lato;
 }
 #mobile-header{
     font-size: 26px;
     font-weight: bolder;
+    font-family: Lato;
 }
 .mobile-status-display{
     position: absolute;
@@ -91,6 +96,7 @@
     color:rgb(255,255,255);
     font-size: 14px;
     padding: 10px;
+    font-family: Lato;
 
 }
 .mobile-status-body{
@@ -111,6 +117,7 @@
 .mobile-right-value{
     font-size: 14px;
     color: black;
+    font-family: Lato;
 }
 
 .mobile-label{
@@ -120,11 +127,13 @@
     width: 200px;
     margin-left: 0px;
     text-align: justify;
+    font-family: Lato;
 }
 
 .right-value{
     font-size: 16px;
     color: black;
+    font-family: Lato;
 }
 
 .label{
@@ -135,6 +144,7 @@
     width: 200px;
     margin-left: 0px;
     text-align: justify;
+    font-family: Lato;
 }
 
 .col-items{
@@ -159,6 +169,7 @@
     margin-top: 30px;
     font-size: 40px;
     text-align: center;
+    font-family: Lato;
 }
 
 #mobile-help-title{
@@ -166,11 +177,13 @@
     margin-top: 15px;
     font-size: 26px;
     text-align: center;
+    font-family: Lato;
 }
 #mobile-contacts-title{
     font-weight: bolder;
     font-size: 26px;
     text-align: center;
+    font-family: Lato;
 }
 
 .help-steps{
@@ -179,12 +192,14 @@
     justify-content: space-between;
     padding: 30px;
     font-size: small;
+    font-family: Lato;
     
 }
 #info-title{
     font-weight: bolder;
     display: inline-block;
     font-size: 16px;
+    font-family: Lato;
     
 }
 
@@ -193,11 +208,12 @@
     padding: 28px;
     display: block;
     text-align: center;
-    font-family: Lato Regular;
+    font-family: Lato;
 }
 #contacts-title{
     font-weight: bolder;
     font-size: 26px;
+    font-family: Lato;
 }
 
 .account-details{
@@ -207,6 +223,7 @@
 .details-title{
     font-weight: bolder;
     font-size: 40px;
+    font-family: Lato;
 }
 
 
@@ -214,7 +231,7 @@
     display: flex;
     flex-direction: row;
     font-weight: bold;
-    font-family:Lato Regular;
+    font-family:Lato;
     padding-bottom: 20px; 
        
 }
@@ -228,11 +245,11 @@
 }
 
 #contacts-p{
-    font-family: Lato Regular;
+    font-family: Lato;
     font-size: 16px;
 }
 #contacts-p-mobile{
-    font-family: Lato Regular;
+    font-family: Lato;
     font-size: 14px;
 }
 input[type=text],input[type=text]:focus,input[type=file],input[type=file]:focus{

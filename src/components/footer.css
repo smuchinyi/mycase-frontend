@@ -16,7 +16,7 @@
     top: 34px;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: Lato Regular;
+    font-family: Lato;
     
  }
 
@@ -27,7 +27,7 @@
    left: 50%;
    text-align: center;
    transform: translate(-50%, -50%);
-   font-family: Lato Regular;
+   font-family: Lato;
    font-size: 16px;
  }
 
@@ -35,7 +35,7 @@
  .operation{
     width:100%;
     color:rgb(255,255,255);
-    font-family: Lato Regular;
+    font-family: Lato;
     font-size:14px;
     padding: 20px;
  }
@@ -53,13 +53,13 @@
 
  .site-title,.contact-title{
     font-weight: bolder;
-    font-size: large;
+    font-size: larger;
  }
  .footer-last{
     display: flex;
     flex-direction: row;
     color:rgb(255,255,255);
-    font-family: Lato Regular;
+    font-family: Lato ;
     font-size:16px;
     padding: 20px;
     justify-content: space-between;
@@ -69,7 +69,7 @@
    display: flex;
    flex-direction: row;
    color:rgb(255,255,255);
-   font-family: Lato Regular;
+   font-family: Lato ;
    font-size:14px;
    padding: 8px;
    justify-content: space-between;
@@ -80,7 +80,7 @@
    font-size:26px;
    font-weight: bolder;
    color: white;
-   font-family: Lato Regular;
+   font-family: Lato ;
    
 }
 
@@ -95,7 +95,7 @@
   left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
-  font-family: Lato Regular;
+  font-family: Lato;
   font-size: 14px;
 }
 
@@ -105,6 +105,7 @@
    color:rgb(255,255,255);
    font-size: small;
    padding: 20px;
+   font-family: Lato;
 }
 
 
@@ -114,3 +115,17 @@
   
 }
  
+.site-link{
+   color:white;
+   font-family: Lato;
+   font-size: 16px;
+}
+.site-link:hover,.mobile-site-link:hover{
+   color: green;
+}
+
+.mobile-site-link{
+   color:white;
+   font-family: Lato;
+   font-size: 14px;
+}
