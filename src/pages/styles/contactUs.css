@@ -26,6 +26,7 @@
     background-color: #E0E1E2;
     height: 450px;
     opacity: 0.9;  
+    font-family: Lato;
     
 }
 
@@ -197,6 +198,7 @@ form{
     text-align: center;
     font-size: small;
     padding: 15px;
+   
     
     
     
@@ -234,6 +236,7 @@ form{
   padding: 1rem;
   padding-right: 2rem;
 }
+
 .icons-div{
-    height: fit-content;
+    margin-left: 10px;
 }

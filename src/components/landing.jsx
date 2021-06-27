@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import child from '../images/child-fl4.png'
-import footer from '../images/footer.png'
+import React, { useEffect, useState } from 'react';
+import child from '../images/child-fl4.png';
+import footer from '../images/footer.png';
 import "./landing.css";
 import { Row, Col, Modal } from 'antd';
 import "antd/dist/antd.css";
-import { useTranslation } from 'react-i18next'
-import i18next from 'i18next'
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 import { useSelector } from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -28,6 +28,7 @@ const row2 = {
 
 const row3 = {
     height: "700px",
+    padding:'20px'
 }
 
 const form = {
@@ -54,12 +55,13 @@ const row2_mobile = {
     padding: "50px",
     marginTop: "250px",
     scrollX: 'auto',
-    fontSize: '1.2vmin',
+    fontSize: '14px',
     fontFamily:'Lato'
 
 }
 
 const row3_mobile = {
+    padding:'10px'
 }
 
 const form_mobile = {
@@ -71,7 +73,8 @@ const form_mobile = {
     top: "190px",
     right: "auto",
     left: "auto",
-    padding: "5px"
+    padding: "5px",
+    fontFamily:"Lato"
 }
 
 

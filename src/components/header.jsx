@@ -76,31 +76,31 @@ export const HeaderSection = () => {
 
     const lang = (
         <Menu onClick={handleLanguageClick}>
-            <Menu.Item key="English" >
+            <Menu.Item key="English" style={{fontFamily:'Lato'}} >
                 English
             </Menu.Item>
-            <Menu.Item key="Kiswahili">
+            <Menu.Item key="Kiswahili" style={{fontFamily:'Lato'}}>
                 Kiswahili
             </Menu.Item>
-            <Menu.Item key="Somali">
+            <Menu.Item key="Somali" style={{fontFamily:'Lato'}}>
                 Somali
             </Menu.Item>
-            <Menu.Item key="Francaise">
+            <Menu.Item key="Francaise" style={{fontFamily:'Lato'}}>
                 Francaise
             </Menu.Item>
-            <Menu.Item key="Arabic">
+            <Menu.Item key="Arabic" style={{fontFamily:'Lato'}}>
                 عربى
             </Menu.Item>
-            <Menu.Item key="Amharic">
+            <Menu.Item key="Amharic" style={{fontFamily:'Lato'}}>
                 ቋንቋ ለውጥ
             </Menu.Item>
-            <Menu.Item key="Kinyarwanda">
+            <Menu.Item key="Kinyarwanda" style={{fontFamily:'Lato'}}>
                 Kinyarwanda
             </Menu.Item>
-            <Menu.Item key="Kirundi">
+            <Menu.Item key="Kirundi" style={{fontFamily:'Lato'}}>
                 Kirundi
             </Menu.Item>
-            <Menu.Item key="Tigrinya">
+            <Menu.Item key="Tigrinya" style={{fontFamily:'Lato'}}>
                 ትግርኛ
             </Menu.Item>
         </Menu>
@@ -240,7 +240,7 @@ export const HeaderSection = () => {
                         <Col span={4}>
                             <h2>
                                 <Dropdown overlay={lang}>
-                                    <Button style={{ borderColor: "#ea9b0a", backgroundColor: "#ea9b0a", fontWeight: "bold", color: "black", fontSize: "14px", height: "30px", display: "inline-block", verticalAlign: "middle" }}>
+                                    <Button style={{ borderColor: "#ea9b0a",fontFamily:'Lato',backgroundColor: "#ea9b0a", fontWeight: "bold", color: "black", fontSize: "14px", height: "30px", display: "inline-block", verticalAlign: "middle" }}>
                                         {currentLanguage} <DownOutlined />
                                     </Button>
                                 </Dropdown>
